@@ -69,7 +69,7 @@ public class F_PRATICIEN extends javax.swing.JFrame {
         jLabelLieuEx.setText("Lieu d'exercice:");
 
         jLabel1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel1.setText("Praticien");
+        jLabel1.setText("Praticiens");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
