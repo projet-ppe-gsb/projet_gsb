@@ -64,7 +64,7 @@ public class F_MEDICAMENT extends javax.swing.JFrame {
 
         jButtonFermer.setText("Fermer");
 
-        jLabelMediacament.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabelMediacament.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabelMediacament.setText("Médicaments");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -98,23 +98,22 @@ public class F_MEDICAMENT extends javax.swing.JFrame {
                                     .addComponent(jLabelNomComm)
                                     .addComponent(jLabelCode)
                                     .addComponent(jLabelComposition))
-                                .addGap(34, 34, 34)
+                                .addGap(44, 44, 44)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTextFieldFamille, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jTextFieldComposition, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jTextFieldNomComm, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jTextFieldCode, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(194, 194, 194)
+                        .addGap(225, 225, 225)
                         .addComponent(jLabelMediacament)))
-                .addContainerGap(73, Short.MAX_VALUE))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jLabelMediacament)
-                .addGap(21, 21, 21)
+                .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelCode)
                     .addComponent(jTextFieldCode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -143,7 +142,7 @@ public class F_MEDICAMENT extends javax.swing.JFrame {
                     .addComponent(jButtonPrecedent)
                     .addComponent(jButtonSuivant)
                     .addComponent(jButtonFermer))
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
 
         jTextFieldNomComm.getAccessibleContext().setAccessibleParent(jTextFieldCode);
