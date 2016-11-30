@@ -51,14 +51,11 @@ public class F_CONNEXION extends javax.swing.JFrame {
 
         jLabelConnexion.setText("IDENTIFIEZ-VOUS");
 
-        jTextFieldIdentifiant.setText("Identifiant");
         jTextFieldIdentifiant.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIdentifiantActionPerformed(evt);
             }
         });
-
-        jTextFieldMDP.setText("MDP");
 
         jToggleButtonOK.setText("OK");
 

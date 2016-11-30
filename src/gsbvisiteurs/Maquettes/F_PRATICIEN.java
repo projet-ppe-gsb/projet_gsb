@@ -9,12 +9,12 @@ package gsbvisiteurs.Maquettes;
  *
  * @author btssio
  */
-public class F_PRACTICIEN extends javax.swing.JFrame {
+public class F_PRATICIEN extends javax.swing.JFrame {
 
     /**
      * Creates new form F_PRACTICIEN
      */
-    public F_PRACTICIEN() {
+    public F_PRATICIEN() {
         initComponents();
     }
 
@@ -60,20 +60,21 @@ public class F_PRACTICIEN extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(F_PRACTICIEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(F_PRATICIEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(F_PRACTICIEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(F_PRATICIEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(F_PRACTICIEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(F_PRATICIEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(F_PRACTICIEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(F_PRATICIEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new F_PRACTICIEN().setVisible(true);
+                new F_PRATICIEN().setVisible(true);
             }
         });
     }
