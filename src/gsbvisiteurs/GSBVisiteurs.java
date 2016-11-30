@@ -3,7 +3,7 @@ package gsbvisiteurs;
 
 /**
  *
- * @author lucas
+ * @author btssio
  */
 public class GSBVisiteurs {
 
