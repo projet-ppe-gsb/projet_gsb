@@ -27,17 +27,141 @@ public class F_VISITEUR extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabelVisiteur = new javax.swing.JLabel();
+        jLabelChercher = new javax.swing.JLabel();
+        jComboBoxChercher = new javax.swing.JComboBox();
+        jLabelNom = new javax.swing.JLabel();
+        jLabelPrenom = new javax.swing.JLabel();
+        jLabelAdresse = new javax.swing.JLabel();
+        jLabelVille = new javax.swing.JLabel();
+        jLabelSecteur = new javax.swing.JLabel();
+        jLabelLabo = new javax.swing.JLabel();
+        jTextFieldNom = new javax.swing.JTextField();
+        jTextFieldPrenom = new javax.swing.JTextField();
+        jTextFieldAdresse = new javax.swing.JTextField();
+        jTextFieldCodePostal = new javax.swing.JTextField();
+        jTextFieldVille = new javax.swing.JTextField();
+        jComboBoxSecteur = new javax.swing.JComboBox();
+        jComboBoxLabo = new javax.swing.JComboBox();
+        jButtonPrecedent = new javax.swing.JButton();
+        jButtonSuivant = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabelVisiteur.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabelVisiteur.setText("Visiteur");
+
+        jLabelChercher.setText("Chercher");
+
+        jComboBoxChercher.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jLabelNom.setText("Nom");
+
+        jLabelPrenom.setText("Prenom");
+
+        jLabelAdresse.setText("Adresse");
+
+        jLabelVille.setText("Ville");
+
+        jLabelSecteur.setText("Secteur");
+
+        jLabelLabo.setText("Labo");
+
+        jComboBoxSecteur.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jComboBoxLabo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jButtonPrecedent.setText("Precedent");
+
+        jButtonSuivant.setText("Suivant");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabelAdresse)
+                        .addGap(60, 60, 60)
+                        .addComponent(jTextFieldAdresse))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelChercher, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelNom)
+                                    .addComponent(jLabelPrenom))
+                                .addGap(38, 38, 38)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jComboBoxChercher, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldNom, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
+                                    .addComponent(jTextFieldPrenom)
+                                    .addComponent(jLabelVisiteur, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelVille)
+                                    .addComponent(jLabelSecteur)
+                                    .addComponent(jLabelLabo))
+                                .addGap(63, 63, 63)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jTextFieldCodePostal, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addComponent(jComboBoxSecteur, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jComboBoxLabo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(0, 10, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jTextFieldVille, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(124, 124, 124))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(86, 86, 86)
+                .addComponent(jButtonPrecedent)
+                .addGap(64, 64, 64)
+                .addComponent(jButtonSuivant)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelVisiteur, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelChercher, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxChercher, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelNom)
+                    .addComponent(jTextFieldNom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelPrenom)
+                    .addComponent(jTextFieldPrenom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelAdresse)
+                    .addComponent(jTextFieldAdresse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelVille)
+                    .addComponent(jTextFieldCodePostal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldVille, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelSecteur)
+                    .addComponent(jComboBoxSecteur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelLabo)
+                    .addComponent(jComboBoxLabo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonPrecedent)
+                    .addComponent(jButtonSuivant))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         pack();
@@ -79,5 +203,23 @@ public class F_VISITEUR extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonPrecedent;
+    private javax.swing.JButton jButtonSuivant;
+    private javax.swing.JComboBox jComboBoxChercher;
+    private javax.swing.JComboBox jComboBoxLabo;
+    private javax.swing.JComboBox jComboBoxSecteur;
+    private javax.swing.JLabel jLabelAdresse;
+    private javax.swing.JLabel jLabelChercher;
+    private javax.swing.JLabel jLabelLabo;
+    private javax.swing.JLabel jLabelNom;
+    private javax.swing.JLabel jLabelPrenom;
+    private javax.swing.JLabel jLabelSecteur;
+    private javax.swing.JLabel jLabelVille;
+    private javax.swing.JLabel jLabelVisiteur;
+    private javax.swing.JTextField jTextFieldAdresse;
+    private javax.swing.JTextField jTextFieldCodePostal;
+    private javax.swing.JTextField jTextFieldNom;
+    private javax.swing.JTextField jTextFieldPrenom;
+    private javax.swing.JTextField jTextFieldVille;
     // End of variables declaration//GEN-END:variables
 }
