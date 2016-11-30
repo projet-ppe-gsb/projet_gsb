@@ -43,7 +43,7 @@ public class Menu_General extends javax.swing.JFrame {
         setTitle("RAPPORT_VISITE");
         setAlwaysOnTop(true);
 
-        jLabelTitreGestionCR.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabelTitreGestionCR.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabelTitreGestionCR.setText("Gestion des comptes rendus");
 
         jLabelComptesRendus.setText("Comptes Rendus");
