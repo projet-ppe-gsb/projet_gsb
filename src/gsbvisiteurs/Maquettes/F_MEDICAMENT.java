@@ -27,18 +27,127 @@ public class F_MEDICAMENT extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabelCode = new javax.swing.JLabel();
+        jLabelNomComm = new javax.swing.JLabel();
+        jTextFieldCode = new javax.swing.JTextField();
+        jTextFieldNomComm = new javax.swing.JTextField();
+        jLabelFamille = new javax.swing.JLabel();
+        jLabelComposition = new javax.swing.JLabel();
+        jLabelEffet = new javax.swing.JLabel();
+        jLabelPrix = new javax.swing.JLabel();
+        jTextFieldFamille = new javax.swing.JTextField();
+        jTextFieldComposition = new javax.swing.JTextField();
+        jTextFieldEffet = new javax.swing.JTextField();
+        jTextFieldPrix = new javax.swing.JTextField();
+        jButtonPrecedent = new javax.swing.JButton();
+        jButtonSuivant = new javax.swing.JButton();
+        jButtonFermer = new javax.swing.JButton();
+        jLabelMediacament = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabelCode.setText("Code");
+
+        jLabelNomComm.setText("Nom Commercial");
+
+        jLabelFamille.setText("Famille");
+
+        jLabelComposition.setText("Composition");
+
+        jLabelEffet.setText("Effets indésidrables");
+
+        jLabelPrix.setText("Prix échantillon");
+
+        jButtonPrecedent.setText("Précédent");
+
+        jButtonSuivant.setText("Suivant");
+
+        jButtonFermer.setText("Fermer");
+
+        jLabelMediacament.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabelMediacament.setText("Médicaments");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(94, 94, 94)
+                .addComponent(jButtonPrecedent)
+                .addGap(40, 40, 40)
+                .addComponent(jButtonSuivant)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonFermer)
+                .addGap(66, 66, 66))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelFamille)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelPrix)
+                                    .addComponent(jLabelEffet))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextFieldEffet, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldPrix, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelNomComm)
+                                    .addComponent(jLabelCode)
+                                    .addComponent(jLabelComposition))
+                                .addGap(44, 44, 44)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextFieldFamille, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldComposition, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldNomComm, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldCode, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(225, 225, 225)
+                        .addComponent(jLabelMediacament)))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabelMediacament)
+                .addGap(33, 33, 33)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelCode)
+                    .addComponent(jTextFieldCode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelNomComm)
+                    .addComponent(jTextFieldNomComm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelFamille)
+                    .addComponent(jTextFieldFamille, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelComposition)
+                    .addComponent(jTextFieldComposition, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelEffet)
+                    .addComponent(jTextFieldEffet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelPrix)
+                    .addComponent(jTextFieldPrix, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonPrecedent)
+                    .addComponent(jButtonSuivant)
+                    .addComponent(jButtonFermer))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
+
+        jTextFieldNomComm.getAccessibleContext().setAccessibleParent(jTextFieldCode);
+        jTextFieldFamille.getAccessibleContext().setAccessibleParent(jTextFieldNomComm);
+        jTextFieldComposition.getAccessibleContext().setAccessibleParent(jTextFieldFamille);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -79,5 +188,21 @@ public class F_MEDICAMENT extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonFermer;
+    private javax.swing.JButton jButtonPrecedent;
+    private javax.swing.JButton jButtonSuivant;
+    private javax.swing.JLabel jLabelCode;
+    private javax.swing.JLabel jLabelComposition;
+    private javax.swing.JLabel jLabelEffet;
+    private javax.swing.JLabel jLabelFamille;
+    private javax.swing.JLabel jLabelMediacament;
+    private javax.swing.JLabel jLabelNomComm;
+    private javax.swing.JLabel jLabelPrix;
+    private javax.swing.JTextField jTextFieldCode;
+    private javax.swing.JTextField jTextFieldComposition;
+    private javax.swing.JTextField jTextFieldEffet;
+    private javax.swing.JTextField jTextFieldFamille;
+    private javax.swing.JTextField jTextFieldNomComm;
+    private javax.swing.JTextField jTextFieldPrix;
     // End of variables declaration//GEN-END:variables
 }
