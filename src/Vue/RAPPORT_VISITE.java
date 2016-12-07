@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gsbvisiteurs.Maquettes;
+package Vue;
 
 /**
  *
@@ -33,7 +33,7 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
         jTextFieldNumRapport = new javax.swing.JTextField();
         jLabelPraticien = new javax.swing.JLabel();
         jButtonDetails = new javax.swing.JButton();
-        jComboBoxPraticien = new javax.swing.JComboBox<>();
+        jComboBoxPraticien = new javax.swing.JComboBox<String>();
         jLabelDate = new javax.swing.JLabel();
         jTextFieldDate = new javax.swing.JTextField();
         jLabelMotif = new javax.swing.JLabel();
@@ -71,7 +71,7 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
         jButtonDetails.setText("Détails");
 
         jComboBoxPraticien.setBackground(new java.awt.Color(55, 55, 55));
-        jComboBoxPraticien.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxPraticien.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabelDate.setText("Date Rapport");
 
