@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controleur;
+package modele.metier;
 
 /**
  *
  * @author btssio
  */
-public class CtrlVisiteur {
+public class Connexion {
     
 }

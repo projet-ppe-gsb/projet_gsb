@@ -95,9 +95,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextFieldIdentifiant">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIdentifiantActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextFieldMDP">
     </Component>

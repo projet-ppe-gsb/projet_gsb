@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Modèle.DAO;
+package modele.metier;
 
 /**
  *
  * @author btssio
  */
-public class DAOVisiteur {
+public class Visiteur {
     
 }
