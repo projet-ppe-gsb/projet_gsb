@@ -27,130 +27,125 @@ public class F_MEDICAMENT extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabelCode = new javax.swing.JLabel();
-        jLabelNomComm = new javax.swing.JLabel();
-        jTextFieldCode = new javax.swing.JTextField();
-        jTextFieldNomComm = new javax.swing.JTextField();
-        jLabelFamille = new javax.swing.JLabel();
-        jLabelComposition = new javax.swing.JLabel();
-        jLabelEffet = new javax.swing.JLabel();
-        jLabelPrix = new javax.swing.JLabel();
-        jTextFieldFamille = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
         jTextFieldComposition = new javax.swing.JTextField();
-        jTextFieldEffet = new javax.swing.JTextField();
+        jTextFieldNomComm = new javax.swing.JTextField();
         jTextFieldPrix = new javax.swing.JTextField();
-        jButtonPrecedent = new javax.swing.JButton();
+        jLabelPrix = new javax.swing.JLabel();
+        jLabelCode = new javax.swing.JLabel();
+        jLabelFamille = new javax.swing.JLabel();
         jButtonSuivant = new javax.swing.JButton();
-        jButtonFermer = new javax.swing.JButton();
+        jButtonPrecedent = new javax.swing.JButton();
         jLabelMediacament = new javax.swing.JLabel();
+        jTextFieldFamille = new javax.swing.JTextField();
+        jLabelEffet = new javax.swing.JLabel();
+        jLabelComposition = new javax.swing.JLabel();
+        jTextFieldContreIndications = new javax.swing.JTextField();
+        jTextFieldCode = new javax.swing.JTextField();
+        jLabelNomComm = new javax.swing.JLabel();
+        jButtonFermer = new javax.swing.JButton();
+        jTextFieldEffet1 = new javax.swing.JTextField();
+        JLabelContreIndications = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabelCode.setText("Code");
+        jPanel1.setLayout(null);
+        jPanel1.add(jTextFieldComposition);
+        jTextFieldComposition.setBounds(290, 150, 420, 19);
+        jTextFieldComposition.getAccessibleContext().setAccessibleParent(jTextFieldFamille);
 
-        jLabelNomComm.setText("Nom Commercial");
+        jPanel1.add(jTextFieldNomComm);
+        jTextFieldNomComm.setBounds(290, 90, 420, 19);
+        jTextFieldNomComm.getAccessibleContext().setAccessibleParent(jTextFieldCode);
 
-        jLabelFamille.setText("Famille");
-
-        jLabelComposition.setText("Composition");
-
-        jLabelEffet.setText("Effets indésidrables");
+        jPanel1.add(jTextFieldPrix);
+        jTextFieldPrix.setBounds(290, 370, 90, 19);
 
         jLabelPrix.setText("Prix échantillon");
+        jPanel1.add(jLabelPrix);
+        jLabelPrix.setBounds(120, 370, 109, 20);
 
-        jButtonPrecedent.setText("Précédent");
+        jLabelCode.setText("Code");
+        jPanel1.add(jLabelCode);
+        jLabelCode.setBounds(120, 60, 36, 15);
+
+        jLabelFamille.setText("Famille");
+        jPanel1.add(jLabelFamille);
+        jLabelFamille.setBounds(120, 120, 50, 15);
 
         jButtonSuivant.setText("Suivant");
+        jPanel1.add(jButtonSuivant);
+        jButtonSuivant.setBounds(400, 410, 87, 25);
 
-        jButtonFermer.setText("Fermer");
+        jButtonPrecedent.setText("Précédent");
+        jPanel1.add(jButtonPrecedent);
+        jButtonPrecedent.setBounds(200, 410, 107, 25);
 
         jLabelMediacament.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabelMediacament.setText("Médicaments");
+        jPanel1.add(jLabelMediacament);
+        jLabelMediacament.setBounds(350, 0, 116, 40);
+        jPanel1.add(jTextFieldFamille);
+        jTextFieldFamille.setBounds(290, 120, 420, 19);
+        jTextFieldFamille.getAccessibleContext().setAccessibleParent(jTextFieldNomComm);
+
+        jLabelEffet.setText("Effets indésidrables");
+        jPanel1.add(jLabelEffet);
+        jLabelEffet.setBounds(120, 190, 142, 15);
+
+        jLabelComposition.setText("Composition");
+        jPanel1.add(jLabelComposition);
+        jLabelComposition.setBounds(120, 150, 88, 15);
+
+        jTextFieldContreIndications.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldContreIndicationsActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextFieldContreIndications);
+        jTextFieldContreIndications.setBounds(290, 280, 420, 80);
+        jPanel1.add(jTextFieldCode);
+        jTextFieldCode.setBounds(290, 60, 160, 19);
+
+        jLabelNomComm.setText("Nom Commercial");
+        jPanel1.add(jLabelNomComm);
+        jLabelNomComm.setBounds(120, 90, 116, 15);
+
+        jButtonFermer.setText("Fermer");
+        jPanel1.add(jButtonFermer);
+        jButtonFermer.setBounds(640, 450, 84, 25);
+        jPanel1.add(jTextFieldEffet1);
+        jTextFieldEffet1.setBounds(290, 190, 420, 80);
+
+        JLabelContreIndications.setText("Contre Indications");
+        jPanel1.add(JLabelContreIndications);
+        JLabelContreIndications.setBounds(120, 280, 130, 15);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vue/GSB.jpg"))); // NOI18N
+        jLabel1.setText("Contre Indication");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(0, 0, 750, 490);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(94, 94, 94)
-                .addComponent(jButtonPrecedent)
-                .addGap(40, 40, 40)
-                .addComponent(jButtonSuivant)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButtonFermer)
-                .addGap(66, 66, 66))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelFamille)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabelPrix)
-                                    .addComponent(jLabelEffet))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextFieldEffet, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextFieldPrix, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabelNomComm)
-                                    .addComponent(jLabelCode)
-                                    .addComponent(jLabelComposition))
-                                .addGap(44, 44, 44)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextFieldFamille, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextFieldComposition, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextFieldNomComm, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextFieldCode, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(225, 225, 225)
-                        .addComponent(jLabelMediacament)))
-                .addContainerGap(63, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 753, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabelMediacament)
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelCode)
-                    .addComponent(jTextFieldCode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelNomComm)
-                    .addComponent(jTextFieldNomComm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelFamille)
-                    .addComponent(jTextFieldFamille, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelComposition)
-                    .addComponent(jTextFieldComposition, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelEffet)
-                    .addComponent(jTextFieldEffet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelPrix)
-                    .addComponent(jTextFieldPrix, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonPrecedent)
-                    .addComponent(jButtonSuivant)
-                    .addComponent(jButtonFermer))
-                .addContainerGap(55, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 8, Short.MAX_VALUE))
         );
-
-        jTextFieldNomComm.getAccessibleContext().setAccessibleParent(jTextFieldCode);
-        jTextFieldFamille.getAccessibleContext().setAccessibleParent(jTextFieldNomComm);
-        jTextFieldComposition.getAccessibleContext().setAccessibleParent(jTextFieldFamille);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextFieldContreIndicationsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldContreIndicationsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldContreIndicationsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -188,9 +183,11 @@ public class F_MEDICAMENT extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel JLabelContreIndications;
     private javax.swing.JButton jButtonFermer;
     private javax.swing.JButton jButtonPrecedent;
     private javax.swing.JButton jButtonSuivant;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelCode;
     private javax.swing.JLabel jLabelComposition;
     private javax.swing.JLabel jLabelEffet;
@@ -198,9 +195,11 @@ public class F_MEDICAMENT extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelMediacament;
     private javax.swing.JLabel jLabelNomComm;
     private javax.swing.JLabel jLabelPrix;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextFieldCode;
     private javax.swing.JTextField jTextFieldComposition;
-    private javax.swing.JTextField jTextFieldEffet;
+    private javax.swing.JTextField jTextFieldContreIndications;
+    private javax.swing.JTextField jTextFieldEffet1;
     private javax.swing.JTextField jTextFieldFamille;
     private javax.swing.JTextField jTextFieldNomComm;
     private javax.swing.JTextField jTextFieldPrix;

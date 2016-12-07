@@ -5,6 +5,7 @@
  */
 package vue;
 
+
 /**
  *
  * @author btssio
@@ -16,6 +17,7 @@ public class Menu_General extends javax.swing.JFrame {
      */
     public Menu_General() {
         initComponents();
+        
     }
 
     /**
@@ -27,6 +29,7 @@ public class Menu_General extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jLabelTitreGestionCR = new javax.swing.JLabel();
         jLabelComptesRendus = new javax.swing.JLabel();
         jLabelVisiteurs = new javax.swing.JLabel();
@@ -38,81 +41,98 @@ public class Menu_General extends javax.swing.JFrame {
         jToggleButtonPraticiens = new javax.swing.JToggleButton();
         jToggleButtonMedicaments = new javax.swing.JToggleButton();
         jToggleButtonQuitter = new javax.swing.JToggleButton();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jSeparator1 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("RAPPORT_VISITE");
         setAlwaysOnTop(true);
 
+        jPanel1.setBackground(new java.awt.Color(102, 153, 255));
+        jPanel1.setLayout(null);
+
         jLabelTitreGestionCR.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabelTitreGestionCR.setForeground(new java.awt.Color(255, 255, 255));
         jLabelTitreGestionCR.setText("Gestion des comptes rendus");
+        jPanel1.add(jLabelTitreGestionCR);
+        jLabelTitreGestionCR.setBounds(190, 10, 406, 28);
 
         jLabelComptesRendus.setText("Comptes Rendus");
+        jPanel1.add(jLabelComptesRendus);
+        jLabelComptesRendus.setBounds(370, 100, 119, 15);
 
         jLabelVisiteurs.setText("Visiteurs");
+        jPanel1.add(jLabelVisiteurs);
+        jLabelVisiteurs.setBounds(370, 150, 63, 15);
 
         jLabelPraticiens.setText("Praticiens");
+        jPanel1.add(jLabelPraticiens);
+        jLabelPraticiens.setBounds(370, 200, 71, 15);
 
         jLabelMedicaments.setText("Medicaments");
+        jPanel1.add(jLabelMedicaments);
+        jLabelMedicaments.setBounds(370, 250, 94, 15);
 
         jLabelQuitter.setText("Quitter");
+        jPanel1.add(jLabelQuitter);
+        jLabelQuitter.setBounds(370, 300, 50, 15);
+
+        jToggleButtonComptesRendus.setBackground(javax.swing.UIManager.getDefaults().getColor("Label.disabledForeground"));
+        jToggleButtonComptesRendus.setForeground(new java.awt.Color(51, 102, 255));
+        jPanel1.add(jToggleButtonComptesRendus);
+        jToggleButtonComptesRendus.setBounds(330, 90, 24, 25);
+
+        jToggleButtonVisiteurs.setBackground(javax.swing.UIManager.getDefaults().getColor("Label.disabledForeground"));
+        jToggleButtonVisiteurs.setForeground(new java.awt.Color(51, 102, 255));
+        jPanel1.add(jToggleButtonVisiteurs);
+        jToggleButtonVisiteurs.setBounds(330, 140, 24, 25);
+
+        jToggleButtonPraticiens.setBackground(javax.swing.UIManager.getDefaults().getColor("Label.disabledForeground"));
+        jToggleButtonPraticiens.setForeground(new java.awt.Color(51, 102, 255));
+        jPanel1.add(jToggleButtonPraticiens);
+        jToggleButtonPraticiens.setBounds(330, 190, 24, 25);
+
+        jToggleButtonMedicaments.setBackground(javax.swing.UIManager.getDefaults().getColor("Label.disabledForeground"));
+        jToggleButtonMedicaments.setForeground(new java.awt.Color(51, 102, 255));
+        jPanel1.add(jToggleButtonMedicaments);
+        jToggleButtonMedicaments.setBounds(330, 240, 24, 25);
+
+        jToggleButtonQuitter.setBackground(javax.swing.UIManager.getDefaults().getColor("Label.disabledForeground"));
+        jToggleButtonQuitter.setForeground(new java.awt.Color(51, 102, 255));
+        jPanel1.add(jToggleButtonQuitter);
+        jToggleButtonQuitter.setBounds(330, 290, 24, 25);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vue/GSB Small.PNG"))); // NOI18N
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(20, 100, 250, 160);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(319, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel2);
+        jPanel2.setBounds(280, 50, 440, 350);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jToggleButtonComptesRendus, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jToggleButtonVisiteurs, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jToggleButtonPraticiens, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jToggleButtonMedicaments, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jToggleButtonQuitter, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelQuitter)
-                            .addComponent(jLabelMedicaments)
-                            .addComponent(jLabelPraticiens)
-                            .addComponent(jLabelVisiteurs)
-                            .addComponent(jLabelComptesRendus))
-                        .addGap(185, 185, 185))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabelTitreGestionCR, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(52, Short.MAX_VALUE))))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 718, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabelTitreGestionCR, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(34, 34, 34)
-                                                .addComponent(jLabelComptesRendus))
-                                            .addComponent(jToggleButtonComptesRendus, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabelVisiteurs))
-                                    .addComponent(jToggleButtonVisiteurs, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabelPraticiens))
-                            .addComponent(jToggleButtonPraticiens, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabelMedicaments))
-                    .addComponent(jToggleButtonMedicaments, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelQuitter)
-                    .addComponent(jToggleButtonQuitter, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(69, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE)
         );
 
         pack();
@@ -145,6 +165,8 @@ public class Menu_General extends javax.swing.JFrame {
         }
         //</editor-fold>
 
+        
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -154,12 +176,16 @@ public class Menu_General extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelComptesRendus;
     private javax.swing.JLabel jLabelMedicaments;
     private javax.swing.JLabel jLabelPraticiens;
     private javax.swing.JLabel jLabelQuitter;
     private javax.swing.JLabel jLabelTitreGestionCR;
     private javax.swing.JLabel jLabelVisiteurs;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JToggleButton jToggleButtonComptesRendus;
     private javax.swing.JToggleButton jToggleButtonMedicaments;
     private javax.swing.JToggleButton jToggleButtonPraticiens;

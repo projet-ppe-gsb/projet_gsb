@@ -29,6 +29,7 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
 
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable3 = new javax.swing.JTable();
+        jPanel1 = new javax.swing.JPanel();
         jLabelNumRapport = new javax.swing.JLabel();
         jTextFieldNumRapport = new javax.swing.JTextField();
         jLabelPraticien = new javax.swing.JLabel();
@@ -48,6 +49,7 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
         jButtonSuivant = new javax.swing.JButton();
         jButtonNouveau = new javax.swing.JButton();
         jLabelRapport = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -64,20 +66,44 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setLayout(null);
+
         jLabelNumRapport.setText("Numéro rapport :");
+        jPanel1.add(jLabelNumRapport);
+        jLabelNumRapport.setBounds(60, 80, 122, 15);
+        jPanel1.add(jTextFieldNumRapport);
+        jTextFieldNumRapport.setBounds(200, 80, 51, 19);
 
         jLabelPraticien.setText("Praticien");
+        jPanel1.add(jLabelPraticien);
+        jLabelPraticien.setBounds(60, 120, 63, 15);
 
         jButtonDetails.setText("Détails");
+        jPanel1.add(jButtonDetails);
+        jButtonDetails.setBounds(290, 110, 84, 25);
 
-        jComboBoxPraticien.setBackground(new java.awt.Color(55, 55, 55));
+        jComboBoxPraticien.setBackground(new java.awt.Color(255, 255, 255));
         jComboBoxPraticien.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel1.add(jComboBoxPraticien);
+        jComboBoxPraticien.setBounds(200, 110, 83, 24);
 
         jLabelDate.setText("Date Rapport");
+        jPanel1.add(jLabelDate);
+        jLabelDate.setBounds(60, 150, 95, 15);
+        jPanel1.add(jTextFieldDate);
+        jTextFieldDate.setBounds(200, 150, 51, 19);
 
         jLabelMotif.setText("Motif Visite");
+        jPanel1.add(jLabelMotif);
+        jLabelMotif.setBounds(60, 190, 80, 15);
+        jPanel1.add(jTextFieldMotif);
+        jTextFieldMotif.setBounds(200, 190, 83, 19);
 
         jLabelBilan.setText("BILAN");
+        jPanel1.add(jLabelBilan);
+        jLabelBilan.setBounds(60, 230, 40, 15);
+        jPanel1.add(jTextFieldBilan);
+        jTextFieldBilan.setBounds(200, 230, 210, 120);
 
         jTableOffre.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -92,116 +118,47 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTableOffre);
 
+        jPanel1.add(jScrollPane1);
+        jScrollPane1.setBounds(450, 230, 288, 90);
+
         jLabel1.setText("Offre d'échantillons");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(450, 210, 140, 15);
 
         jButtonFermer.setText("Fermer");
+        jPanel1.add(jButtonFermer);
+        jButtonFermer.setBounds(480, 420, 84, 25);
 
         jButtonPrecedent.setText("Précédent");
+        jPanel1.add(jButtonPrecedent);
+        jButtonPrecedent.setBounds(170, 370, 107, 25);
 
         jButtonSuivant.setText("Suivant");
+        jPanel1.add(jButtonSuivant);
+        jButtonSuivant.setBounds(300, 370, 87, 25);
 
         jButtonNouveau.setText("Nouveau");
+        jPanel1.add(jButtonNouveau);
+        jButtonNouveau.setBounds(400, 370, 96, 25);
 
         jLabelRapport.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabelRapport.setText("Rapport de Visite");
+        jPanel1.add(jLabelRapport);
+        jLabelRapport.setBounds(300, 30, 153, 22);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vue/GSB.jpg"))); // NOI18N
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(0, 0, 760, 460);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButtonPrecedent)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabelNumRapport)
-                        .addComponent(jLabelPraticien)
-                        .addComponent(jLabelDate)
-                        .addComponent(jLabelMotif)
-                        .addComponent(jLabelBilan)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButtonSuivant)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButtonNouveau)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 98, Short.MAX_VALUE)
-                        .addComponent(jButtonFermer)
-                        .addGap(73, 73, 73))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextFieldNumRapport, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jTextFieldBilan, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBoxPraticien, javax.swing.GroupLayout.Alignment.LEADING, 0, 83, Short.MAX_VALUE)
-                            .addComponent(jTextFieldMotif, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextFieldDate, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButtonDetails)
-                                .addContainerGap())
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(29, 29, 29))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(jLabel1)
-                                        .addGap(98, 98, 98))))))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(172, 172, 172)
-                .addComponent(jLabelRapport)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 751, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(jLabelRapport)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelNumRapport)
-                    .addComponent(jTextFieldNumRapport, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelPraticien)
-                    .addComponent(jButtonDetails)
-                    .addComponent(jComboBoxPraticien, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelDate)
-                            .addComponent(jTextFieldDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabelMotif)
-                                    .addComponent(jTextFieldMotif, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(21, 21, 21)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabelBilan)
-                                    .addComponent(jTextFieldBilan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(jLabel1)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                        .addComponent(jButtonFermer)
-                        .addGap(76, 76, 76))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButtonPrecedent)
-                            .addComponent(jButtonSuivant)
-                            .addComponent(jButtonNouveau))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -250,12 +207,14 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
     private javax.swing.JButton jButtonSuivant;
     private javax.swing.JComboBox<String> jComboBoxPraticien;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabelBilan;
     private javax.swing.JLabel jLabelDate;
     private javax.swing.JLabel jLabelMotif;
     private javax.swing.JLabel jLabelNumRapport;
     private javax.swing.JLabel jLabelPraticien;
     private javax.swing.JLabel jLabelRapport;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable3;
