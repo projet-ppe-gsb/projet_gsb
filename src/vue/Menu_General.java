@@ -5,6 +5,11 @@
  */
 package vue;
 
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JSeparator;
+import javax.swing.JToggleButton;
+
 
 /**
  *
@@ -192,4 +197,64 @@ public class Menu_General extends javax.swing.JFrame {
     private javax.swing.JToggleButton jToggleButtonQuitter;
     private javax.swing.JToggleButton jToggleButtonVisiteurs;
     // End of variables declaration//GEN-END:variables
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public JLabel getjLabelComptesRendus() {
+        return jLabelComptesRendus;
+    }
+
+    public JLabel getjLabelMedicaments() {
+        return jLabelMedicaments;
+    }
+
+    public JLabel getjLabelPraticiens() {
+        return jLabelPraticiens;
+    }
+
+    public JLabel getjLabelQuitter() {
+        return jLabelQuitter;
+    }
+
+    public JLabel getjLabelTitreGestionCR() {
+        return jLabelTitreGestionCR;
+    }
+
+    public JLabel getjLabelVisiteurs() {
+        return jLabelVisiteurs;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public JPanel getjPanel2() {
+        return jPanel2;
+    }
+
+    public JSeparator getjSeparator1() {
+        return jSeparator1;
+    }
+
+    public JToggleButton getjToggleButtonComptesRendus() {
+        return jToggleButtonComptesRendus;
+    }
+
+    public JToggleButton getjToggleButtonMedicaments() {
+        return jToggleButtonMedicaments;
+    }
+
+    public JToggleButton getjToggleButtonPraticiens() {
+        return jToggleButtonPraticiens;
+    }
+
+    public JToggleButton getjToggleButtonQuitter() {
+        return jToggleButtonQuitter;
+    }
+
+    public JToggleButton getjToggleButtonVisiteurs() {
+        return jToggleButtonVisiteurs;
+    }
 }
