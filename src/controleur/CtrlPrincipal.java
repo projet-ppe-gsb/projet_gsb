@@ -9,10 +9,10 @@ public class CtrlPrincipal {
     CtrlVisiteur ctrlVisiteur;
     CtrlPrincipal ctrlPrincipal;
 
-    public void afficherVisiteur() {
-        this.ctrlVisiteur.getVue().setVisible(true);
-        this.ctrlMenu.getVue().setVisible(false);
-    }
+//    public void afficherVisiteur() {
+//        this.ctrlVisiteur.getVue().setVisible(true);
+//        this.ctrlMenu.getVue().setVisible(false);
+//    }
 
     public void quitterApplication() {
         // Confirmer avant de quitter
