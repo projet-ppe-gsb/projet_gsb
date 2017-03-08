@@ -5,6 +5,7 @@
  */
 package vue;
 
+import controleur.CtrlMenu;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSeparator;
@@ -176,6 +177,7 @@ public class Menu_General extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Menu_General().setVisible(true);
+                //new CtrlMenu(this, null);
             }
         });
     }

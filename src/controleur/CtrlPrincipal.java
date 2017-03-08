@@ -1,18 +1,87 @@
 package controleur;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class CtrlPrincipal {
 
     CtrlMenu ctrlMenu;
-    CtrlPraticien ctrlRapportVisite;
+    CtrlPraticien ctrlPraticien;
     CtrlVisiteur ctrlVisiteur;
     CtrlPrincipal ctrlPrincipal;
+    CtrlRapportVisite ctrlRapportVisite;
+    CtrlMedicament ctrlMedicament;
 
-//    public void afficherVisiteur() {
-//        this.ctrlVisiteur.getVue().setVisible(true);
-//        this.ctrlMenu.getVue().setVisible(false);
-//    }
+    public CtrlMenu getCtrlMenu() {
+        return ctrlMenu;
+    }
+
+    public void setCtrlMenu(CtrlMenu ctrlMenu) {
+        this.ctrlMenu = ctrlMenu;
+    }
+
+    public CtrlPraticien getCtrlPraticien() {
+        return ctrlPraticien;
+    }
+
+    public void setCtrlPraticien(CtrlPraticien ctrlPraticien) {
+        this.ctrlPraticien = ctrlPraticien;
+    }
+
+    public CtrlRapportVisite getCtrlRapportVisite() {
+        return ctrlRapportVisite;
+    }
+
+    public void setCtrlRapportVisite(CtrlRapportVisite ctrlRapportVisite) {
+        this.ctrlRapportVisite = ctrlRapportVisite;
+    }
+
+    public CtrlMedicament getCtrlMedicament() {
+        return ctrlMedicament;
+    }
+
+    public void setCtrlMedicament(CtrlMedicament ctrlMedicament) {
+        this.ctrlMedicament = ctrlMedicament;
+    }
+
+
+    public CtrlVisiteur getCtrlVisiteur() {
+        return ctrlVisiteur;
+    }
+
+    public void setCtrlVisiteur(CtrlVisiteur ctrlVisiteur) {
+        this.ctrlVisiteur = ctrlVisiteur;
+    }
+
+    public CtrlPrincipal getCtrlPrincipal() {
+        return ctrlPrincipal;
+    }
+
+    public void setCtrlPrincipal(CtrlPrincipal ctrlPrincipal) {
+        this.ctrlPrincipal = ctrlPrincipal;
+    }
+
+    public void afficherVisiteur() {
+        this.ctrlMenu.getVue().setVisible(false);
+        this.ctrlVisiteur.getVue().setVisible(true);
+    }
+    public void afficherPraticien() {
+        this.ctrlMenu.getVue().setVisible(false);
+        this.ctrlPraticien.getVue().setVisible(true);
+    }
+    public void afficherMedicament() {
+        this.ctrlMenu.getVue().setVisible(false);
+        this.ctrlMedicament.getVue().setVisible(true);
+    }
+    public void afficherRapportVisite() {
+        this.ctrlMenu.getVue().setVisible(false);
+        this.ctrlRapportVisite.getVue().setVisible(true);
+    }
+    
+    public void afficherMenu(JFrame laVue) {
+        laVue.setVisible(false);
+        this.ctrlRapportVisite.getVue().setVisible(true);
+    }
 
     public void quitterApplication() {
         // Confirmer avant de quitter

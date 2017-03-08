@@ -27,16 +27,11 @@ import javax.swing.JOptionPane;
 public class CtrlVisiteur {
     private F_VISITEUR vue; // LA VUE
     private CtrlPrincipal ctrlPrincipal;
-    private String login;
+    
 
-    public CtrlVisiteur(F_VISITEUR vue, String login) {
+    public CtrlVisiteur(F_VISITEUR vue, CtrlPrincipal leControleurPrincipal) {
         this.vue = vue;
-        this.login = login;
-    }
-    public CtrlVisiteur(F_VISITEUR vue, CtrlPrincipal ctrl) {
-        this.vue = vue;
-        this.ctrlPrincipal = ctrl;
-        // le contrôleur écoute la vue
+        this.ctrlPrincipal = leControleurPrincipal;
     }
 
      public F_VISITEUR getVue() {
