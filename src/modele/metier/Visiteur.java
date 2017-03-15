@@ -24,8 +24,6 @@ public class Visiteur {
     private Secteur secteur;
     private Labo labo;
 
-    
-
     public String getMatricule() {
         return matricule;
     }

@@ -18,7 +18,7 @@ public class Secteur {
     
     
     //constructeurs
-       
+    
     public Secteur(String sec_code, String sec_libelle){
         this.sec_code = sec_code;
         this.sec_libelle = sec_libelle;
