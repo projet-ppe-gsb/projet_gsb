@@ -64,23 +64,28 @@ public class CtrlPrincipal {
     public void afficherVisiteur(JFrame laVue) {
         laVue.setVisible(false);
         this.ctrlVisiteur.getVue().setVisible(true);
+        this.ctrlVisiteur.getVue().setBounds(this.ctrlMenu.getVue().getBounds());
     }
     public void afficherPraticien(JFrame laVue) {
         laVue.setVisible(false);
         this.ctrlPraticien.getVue().setVisible(true);
+        this.ctrlPraticien.getVue().setBounds(this.ctrlMenu.getVue().getBounds());
     }
     public void afficherMedicament(JFrame laVue) {
         laVue.setVisible(false);
         this.ctrlMedicament.getVue().setVisible(true);
+        this.ctrlMedicament.getVue().setBounds(this.ctrlMenu.getVue().getBounds());
     }
     public void afficherRapportVisite(JFrame laVue) {
         laVue.setVisible(false);
         this.ctrlRapportVisite.getVue().setVisible(true);
+        this.ctrlRapportVisite.getVue().setBounds(this.ctrlMenu.getVue().getBounds());
     }
     
     public void afficherMenu(JFrame laVue) {
         laVue.setVisible(false);
         this.ctrlMenu.getVue().setVisible(true);
+        
     }
 
     public void quitterApplication() {

@@ -57,51 +57,47 @@ public class F_MEDICAMENT extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
         jPanel1.add(jTextFieldComposition);
-        jTextFieldComposition.setBounds(290, 150, 420, 19);
-        jTextFieldComposition.getAccessibleContext().setAccessibleParent(jTextFieldFamille);
-
+        jTextFieldComposition.setBounds(180, 130, 420, 19);
         jPanel1.add(jTextFieldNomComm);
-        jTextFieldNomComm.setBounds(290, 90, 420, 19);
-        jTextFieldNomComm.getAccessibleContext().setAccessibleParent(jTextFieldCode);
-
+        jTextFieldNomComm.setBounds(180, 90, 420, 19);
         jPanel1.add(jTextFieldPrix);
-        jTextFieldPrix.setBounds(290, 370, 90, 19);
+        jTextFieldPrix.setBounds(180, 310, 90, 19);
 
         jLabelPrix.setText("Prix échantillon");
         jPanel1.add(jLabelPrix);
-        jLabelPrix.setBounds(120, 370, 109, 20);
+        jLabelPrix.setBounds(30, 310, 109, 20);
 
         jLabelCode.setText("Code");
         jPanel1.add(jLabelCode);
-        jLabelCode.setBounds(120, 60, 36, 15);
+        jLabelCode.setBounds(30, 70, 36, 15);
 
         jLabelFamille.setText("Famille");
         jPanel1.add(jLabelFamille);
-        jLabelFamille.setBounds(120, 120, 50, 15);
+        jLabelFamille.setBounds(30, 110, 50, 15);
 
         jButtonSuivant.setText("Suivant");
         jPanel1.add(jButtonSuivant);
-        jButtonSuivant.setBounds(400, 410, 87, 25);
+        jButtonSuivant.setBounds(330, 350, 87, 25);
 
         jButtonPrecedent.setText("Précédent");
         jPanel1.add(jButtonPrecedent);
-        jButtonPrecedent.setBounds(200, 410, 107, 25);
+        jButtonPrecedent.setBounds(180, 350, 107, 25);
 
         jLabelMediacament.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabelMediacament.setText("Médicaments");
         jPanel1.add(jLabelMediacament);
-        jLabelMediacament.setBounds(350, 0, 116, 40);
+        jLabelMediacament.setBounds(260, 0, 116, 40);
         jPanel1.add(jTextFieldFamille);
-        jTextFieldFamille.setBounds(290, 120, 420, 19);
+        jTextFieldFamille.setBounds(180, 110, 420, 19);
         jTextFieldFamille.getAccessibleContext().setAccessibleParent(jTextFieldNomComm);
 
         jLabelEffet.setText("Effets indésidrables");
         jPanel1.add(jLabelEffet);
-        jLabelEffet.setBounds(120, 190, 142, 15);
+        jLabelEffet.setBounds(30, 150, 142, 15);
 
         jLabelComposition.setText("Composition");
         jPanel1.add(jLabelComposition);
-        jLabelComposition.setBounds(120, 150, 88, 15);
+        jLabelComposition.setBounds(30, 130, 88, 15);
 
         jTextFieldContreIndications.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,40 +105,38 @@ public class F_MEDICAMENT extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextFieldContreIndications);
-        jTextFieldContreIndications.setBounds(290, 280, 420, 80);
+        jTextFieldContreIndications.setBounds(180, 230, 420, 80);
         jPanel1.add(jTextFieldCode);
-        jTextFieldCode.setBounds(290, 60, 160, 19);
+        jTextFieldCode.setBounds(180, 70, 160, 19);
 
         jLabelNomComm.setText("Nom Commercial");
         jPanel1.add(jLabelNomComm);
-        jLabelNomComm.setBounds(120, 90, 116, 15);
+        jLabelNomComm.setBounds(30, 90, 116, 15);
 
         jButtonFermer.setText("Fermer");
         jPanel1.add(jButtonFermer);
-        jButtonFermer.setBounds(640, 450, 84, 25);
+        jButtonFermer.setBounds(490, 350, 84, 25);
         jPanel1.add(jTextFieldEffet1);
-        jTextFieldEffet1.setBounds(290, 190, 420, 80);
+        jTextFieldEffet1.setBounds(180, 150, 420, 80);
 
         JLabelContreIndications.setText("Contre Indications");
         jPanel1.add(JLabelContreIndications);
-        JLabelContreIndications.setBounds(120, 280, 130, 15);
+        JLabelContreIndications.setBounds(30, 230, 130, 15);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vue/GSB.jpg"))); // NOI18N
         jLabel1.setText("Contre Indication");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 750, 490);
+        jLabel1.setBounds(0, 0, 730, 470);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 753, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 643, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 8, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();

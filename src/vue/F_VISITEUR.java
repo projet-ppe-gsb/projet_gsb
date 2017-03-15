@@ -62,7 +62,7 @@ public class F_VISITEUR extends javax.swing.JFrame {
         jLabelVisiteur.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabelVisiteur.setText("Visiteur");
         jPanel1.add(jLabelVisiteur);
-        jLabelVisiteur.setBounds(310, 10, 137, 23);
+        jLabelVisiteur.setBounds(220, 10, 137, 23);
 
         jLabelChercher.setText("Chercher");
         jPanel1.add(jLabelChercher);
@@ -100,7 +100,7 @@ public class F_VISITEUR extends javax.swing.JFrame {
         jPanel1.add(jTextFieldPrenom);
         jTextFieldPrenom.setBounds(130, 118, 146, 19);
         jPanel1.add(jTextFieldAdresse);
-        jTextFieldAdresse.setBounds(130, 155, 602, 19);
+        jTextFieldAdresse.setBounds(130, 155, 410, 19);
         jPanel1.add(jTextFieldCodePostal);
         jTextFieldCodePostal.setBounds(130, 192, 39, 19);
         jPanel1.add(jTextFieldVille);
@@ -128,21 +128,19 @@ public class F_VISITEUR extends javax.swing.JFrame {
 
         jLabelBG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vue/GSB.jpg"))); // NOI18N
         jPanel1.add(jLabelBG);
-        jLabelBG.setBounds(0, -10, 744, 480);
+        jLabelBG.setBounds(0, -10, 580, 430);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 734, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 14, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 463, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 416, Short.MAX_VALUE)
                 .addContainerGap())
         );
 

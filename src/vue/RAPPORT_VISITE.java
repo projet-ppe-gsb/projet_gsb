@@ -78,40 +78,40 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
 
         jLabelNumRapport.setText("Numéro rapport :");
         jPanel1.add(jLabelNumRapport);
-        jLabelNumRapport.setBounds(60, 80, 122, 15);
+        jLabelNumRapport.setBounds(10, 60, 122, 15);
         jPanel1.add(jTextFieldNumRapport);
-        jTextFieldNumRapport.setBounds(200, 80, 51, 19);
+        jTextFieldNumRapport.setBounds(150, 60, 51, 19);
 
         jLabelPraticien.setText("Praticien");
         jPanel1.add(jLabelPraticien);
-        jLabelPraticien.setBounds(60, 120, 63, 15);
+        jLabelPraticien.setBounds(10, 100, 63, 15);
 
         jButtonDetails.setText("Détails");
         jPanel1.add(jButtonDetails);
-        jButtonDetails.setBounds(290, 110, 84, 25);
+        jButtonDetails.setBounds(240, 90, 84, 25);
 
         jComboBoxPraticien.setBackground(new java.awt.Color(255, 255, 255));
         jComboBoxPraticien.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel1.add(jComboBoxPraticien);
-        jComboBoxPraticien.setBounds(200, 110, 83, 24);
+        jComboBoxPraticien.setBounds(150, 90, 83, 24);
 
         jLabelDate.setText("Date Rapport");
         jPanel1.add(jLabelDate);
-        jLabelDate.setBounds(60, 150, 95, 15);
+        jLabelDate.setBounds(10, 130, 95, 15);
         jPanel1.add(jTextFieldDate);
-        jTextFieldDate.setBounds(200, 150, 51, 19);
+        jTextFieldDate.setBounds(150, 130, 51, 19);
 
         jLabelMotif.setText("Motif Visite");
         jPanel1.add(jLabelMotif);
-        jLabelMotif.setBounds(60, 190, 80, 15);
+        jLabelMotif.setBounds(10, 170, 80, 15);
         jPanel1.add(jTextFieldMotif);
-        jTextFieldMotif.setBounds(200, 190, 83, 19);
+        jTextFieldMotif.setBounds(150, 170, 83, 19);
 
         jLabelBilan.setText("BILAN");
         jPanel1.add(jLabelBilan);
-        jLabelBilan.setBounds(60, 230, 40, 15);
+        jLabelBilan.setBounds(10, 210, 40, 15);
         jPanel1.add(jTextFieldBilan);
-        jTextFieldBilan.setBounds(200, 230, 210, 120);
+        jTextFieldBilan.setBounds(150, 210, 210, 120);
 
         jTableOffre.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -127,46 +127,46 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTableOffre);
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(450, 230, 288, 90);
+        jScrollPane1.setBounds(400, 210, 180, 90);
 
         jLabel1.setText("Offre d'échantillons");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(450, 210, 140, 15);
+        jLabel1.setBounds(400, 190, 140, 15);
 
         jButtonFermer.setText("Fermer");
         jPanel1.add(jButtonFermer);
-        jButtonFermer.setBounds(480, 420, 84, 25);
+        jButtonFermer.setBounds(480, 350, 84, 25);
 
         jButtonPrecedent.setText("Précédent");
         jPanel1.add(jButtonPrecedent);
-        jButtonPrecedent.setBounds(170, 370, 107, 25);
+        jButtonPrecedent.setBounds(120, 350, 107, 25);
 
         jButtonSuivant.setText("Suivant");
         jPanel1.add(jButtonSuivant);
-        jButtonSuivant.setBounds(300, 370, 87, 25);
+        jButtonSuivant.setBounds(250, 350, 87, 25);
 
         jButtonNouveau.setText("Nouveau");
         jPanel1.add(jButtonNouveau);
-        jButtonNouveau.setBounds(400, 370, 96, 25);
+        jButtonNouveau.setBounds(350, 350, 96, 25);
 
         jLabelRapport.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabelRapport.setText("Rapport de Visite");
         jPanel1.add(jLabelRapport);
-        jLabelRapport.setBounds(300, 30, 153, 22);
+        jLabelRapport.setBounds(220, 10, 153, 22);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vue/GSB.jpg"))); // NOI18N
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(0, 0, 760, 460);
+        jLabel2.setBounds(0, 0, 610, 400);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 751, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 602, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 471, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();

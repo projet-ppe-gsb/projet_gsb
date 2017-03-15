@@ -66,88 +66,90 @@ public class F_PRATICIEN extends javax.swing.JFrame {
 
         jLabelChercher.setText("Chercher: ");
         jPanel1.add(jLabelChercher);
-        jLabelChercher.setBounds(140, 60, 73, 15);
+        jLabelChercher.setBounds(90, 60, 73, 15);
 
         jPanel1.add(jComboBoxChercher);
-        jComboBoxChercher.setBounds(300, 50, 97, 24);
+        jComboBoxChercher.setBounds(250, 50, 97, 24);
 
         jButtonChercher.setText("OK");
         jPanel1.add(jButtonChercher);
-        jButtonChercher.setBounds(430, 50, 54, 25);
+        jButtonChercher.setBounds(380, 50, 54, 25);
         jPanel1.add(jSeparator1);
         jSeparator1.setBounds(12, 94, 817, 10);
 
         jLabelNum.setText("Numéro: ");
         jPanel1.add(jLabelNum);
-        jLabelNum.setBounds(140, 150, 64, 15);
+        jLabelNum.setBounds(90, 150, 64, 15);
         jPanel1.add(jTextFieldNumero);
-        jTextFieldNumero.setBounds(300, 150, 64, 19);
+        jTextFieldNumero.setBounds(250, 150, 64, 19);
 
         jLabelNom.setText("Nom: ");
         jPanel1.add(jLabelNom);
-        jLabelNom.setBounds(140, 180, 40, 15);
+        jLabelNom.setBounds(90, 180, 40, 15);
 
         jLabelPrenom.setText("Prénom: ");
         jPanel1.add(jLabelPrenom);
-        jLabelPrenom.setBounds(140, 210, 63, 15);
+        jLabelPrenom.setBounds(90, 210, 63, 15);
 
         jLabelAdresse.setText("Adresse: ");
         jPanel1.add(jLabelAdresse);
-        jLabelAdresse.setBounds(140, 240, 67, 15);
+        jLabelAdresse.setBounds(90, 240, 67, 15);
 
         jLabelVille.setText("Ville: ");
         jPanel1.add(jLabelVille);
-        jLabelVille.setBounds(140, 270, 39, 15);
+        jLabelVille.setBounds(90, 270, 39, 15);
 
         jLabelCoeffNot.setText("COEFF. Notoriete: ");
         jPanel1.add(jLabelCoeffNot);
-        jLabelCoeffNot.setBounds(140, 300, 130, 15);
+        jLabelCoeffNot.setBounds(90, 300, 130, 15);
 
         jLabelLieuEx.setText("Lieu d'exercice:");
         jPanel1.add(jLabelLieuEx);
-        jLabelLieuEx.setBounds(140, 330, 110, 15);
+        jLabelLieuEx.setBounds(90, 330, 110, 15);
         jPanel1.add(jTextFieldNom);
-        jTextFieldNom.setBounds(300, 180, 131, 19);
+        jTextFieldNom.setBounds(250, 180, 131, 19);
         jPanel1.add(jTextFieldPrenom);
-        jTextFieldPrenom.setBounds(300, 210, 131, 19);
+        jTextFieldPrenom.setBounds(250, 210, 131, 19);
         jPanel1.add(jTextFieldAdresse);
-        jTextFieldAdresse.setBounds(300, 240, 131, 19);
+        jTextFieldAdresse.setBounds(250, 240, 131, 19);
         jPanel1.add(jTextFieldVille);
-        jTextFieldVille.setBounds(400, 270, 135, 19);
+        jTextFieldVille.setBounds(350, 270, 135, 19);
         jPanel1.add(jTextFieldCP1);
-        jTextFieldCP1.setBounds(300, 270, 80, 19);
+        jTextFieldCP1.setBounds(250, 270, 80, 19);
         jPanel1.add(jTextFieldCoefNot);
-        jTextFieldCoefNot.setBounds(300, 300, 135, 19);
+        jTextFieldCoefNot.setBounds(250, 300, 135, 19);
 
         jPanel1.add(jComboLieuEx);
-        jComboLieuEx.setBounds(300, 330, 228, 24);
+        jComboLieuEx.setBounds(250, 330, 228, 24);
 
         jButtonPrecedent.setText("Précédent");
         jPanel1.add(jButtonPrecedent);
-        jButtonPrecedent.setBounds(270, 380, 107, 25);
+        jButtonPrecedent.setBounds(120, 380, 107, 25);
 
         jButtonSuivant.setText("Suivant");
         jPanel1.add(jButtonSuivant);
-        jButtonSuivant.setBounds(440, 380, 87, 25);
+        jButtonSuivant.setBounds(290, 380, 87, 25);
 
         jButtonFermer.setText("Fermer");
         jPanel1.add(jButtonFermer);
-        jButtonFermer.setBounds(600, 400, 84, 25);
+        jButtonFermer.setBounds(430, 380, 84, 25);
 
         jLabelTitre.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabelTitre.setText("Praticiens");
         jPanel1.add(jLabelTitre);
-        jLabelTitre.setBounds(290, 10, 85, 22);
+        jLabelTitre.setBounds(240, 10, 85, 22);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vue/GSB.jpg"))); // NOI18N
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(0, 0, 750, 440);
+        jLabel4.setBounds(0, 0, 600, 440);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 749, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 602, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
