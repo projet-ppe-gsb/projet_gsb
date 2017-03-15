@@ -64,9 +64,9 @@ public class Menu_General extends javax.swing.JFrame {
         jPanel1.add(jLabelTitreGestionCR);
         jLabelTitreGestionCR.setBounds(190, 10, 406, 28);
 
-        jLabelComptesRendus.setText("Comptes Rendus");
+        jLabelComptesRendus.setText("Rapport de visite");
         jPanel1.add(jLabelComptesRendus);
-        jLabelComptesRendus.setBounds(370, 100, 119, 15);
+        jLabelComptesRendus.setBounds(370, 100, 160, 15);
 
         jLabelVisiteurs.setText("Visiteurs");
         jPanel1.add(jLabelVisiteurs);

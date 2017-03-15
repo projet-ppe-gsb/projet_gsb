@@ -61,26 +61,26 @@ public class CtrlPrincipal {
         this.ctrlPrincipal = ctrlPrincipal;
     }
 
-    public void afficherVisiteur() {
-        this.ctrlMenu.getVue().setVisible(false);
+    public void afficherVisiteur(JFrame laVue) {
+        laVue.setVisible(false);
         this.ctrlVisiteur.getVue().setVisible(true);
     }
-    public void afficherPraticien() {
-        this.ctrlMenu.getVue().setVisible(false);
+    public void afficherPraticien(JFrame laVue) {
+        laVue.setVisible(false);
         this.ctrlPraticien.getVue().setVisible(true);
     }
-    public void afficherMedicament() {
-        this.ctrlMenu.getVue().setVisible(false);
+    public void afficherMedicament(JFrame laVue) {
+        laVue.setVisible(false);
         this.ctrlMedicament.getVue().setVisible(true);
     }
-    public void afficherRapportVisite() {
-        this.ctrlMenu.getVue().setVisible(false);
+    public void afficherRapportVisite(JFrame laVue) {
+        laVue.setVisible(false);
         this.ctrlRapportVisite.getVue().setVisible(true);
     }
     
     public void afficherMenu(JFrame laVue) {
         laVue.setVisible(false);
-        this.ctrlRapportVisite.getVue().setVisible(true);
+        this.ctrlMenu.getVue().setVisible(true);
     }
 
     public void quitterApplication() {

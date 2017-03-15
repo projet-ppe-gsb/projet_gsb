@@ -5,6 +5,11 @@
  */
 package vue;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
 /**
  *
  * @author btssio
@@ -180,6 +185,86 @@ public class F_MEDICAMENT extends javax.swing.JFrame {
                 new F_MEDICAMENT().setVisible(true);
             }
         });
+    }
+
+    public JLabel getJLabelContreIndications() {
+        return JLabelContreIndications;
+    }
+
+    public JButton getjButtonFermer() {
+        return jButtonFermer;
+    }
+
+    public JButton getjButtonPrecedent() {
+        return jButtonPrecedent;
+    }
+
+    public JButton getjButtonSuivant() {
+        return jButtonSuivant;
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public JLabel getjLabelCode() {
+        return jLabelCode;
+    }
+
+    public JLabel getjLabelComposition() {
+        return jLabelComposition;
+    }
+
+    public JLabel getjLabelEffet() {
+        return jLabelEffet;
+    }
+
+    public JLabel getjLabelFamille() {
+        return jLabelFamille;
+    }
+
+    public JLabel getjLabelMediacament() {
+        return jLabelMediacament;
+    }
+
+    public JLabel getjLabelNomComm() {
+        return jLabelNomComm;
+    }
+
+    public JLabel getjLabelPrix() {
+        return jLabelPrix;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public JTextField getjTextFieldCode() {
+        return jTextFieldCode;
+    }
+
+    public JTextField getjTextFieldComposition() {
+        return jTextFieldComposition;
+    }
+
+    public JTextField getjTextFieldContreIndications() {
+        return jTextFieldContreIndications;
+    }
+
+    public JTextField getjTextFieldEffet1() {
+        return jTextFieldEffet1;
+    }
+
+    public JTextField getjTextFieldFamille() {
+        return jTextFieldFamille;
+    }
+
+    public JTextField getjTextFieldNomComm() {
+        return jTextFieldNomComm;
+    }
+
+    public JTextField getjTextFieldPrix() {
+        return jTextFieldPrix;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -5,6 +5,14 @@
  */
 package vue;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
 /**
  *
  * @author btssio
@@ -158,7 +166,7 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 471, Short.MAX_VALUE)
         );
 
         pack();
@@ -197,6 +205,98 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
                 new RAPPORT_VISITE().setVisible(true);
             }
         });
+    }
+
+    public JButton getjButtonDetails() {
+        return jButtonDetails;
+    }
+
+    public JButton getjButtonFermer() {
+        return jButtonFermer;
+    }
+
+    public JButton getjButtonNouveau() {
+        return jButtonNouveau;
+    }
+
+    public JButton getjButtonPrecedent() {
+        return jButtonPrecedent;
+    }
+
+    public JButton getjButtonSuivant() {
+        return jButtonSuivant;
+    }
+
+    public JComboBox<String> getjComboBoxPraticien() {
+        return jComboBoxPraticien;
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public JLabel getjLabel2() {
+        return jLabel2;
+    }
+
+    public JLabel getjLabelBilan() {
+        return jLabelBilan;
+    }
+
+    public JLabel getjLabelDate() {
+        return jLabelDate;
+    }
+
+    public JLabel getjLabelMotif() {
+        return jLabelMotif;
+    }
+
+    public JLabel getjLabelNumRapport() {
+        return jLabelNumRapport;
+    }
+
+    public JLabel getjLabelPraticien() {
+        return jLabelPraticien;
+    }
+
+    public JLabel getjLabelRapport() {
+        return jLabelRapport;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public JScrollPane getjScrollPane1() {
+        return jScrollPane1;
+    }
+
+    public JScrollPane getjScrollPane3() {
+        return jScrollPane3;
+    }
+
+    public JTable getjTable3() {
+        return jTable3;
+    }
+
+    public JTable getjTableOffre() {
+        return jTableOffre;
+    }
+
+    public JTextField getjTextFieldBilan() {
+        return jTextFieldBilan;
+    }
+
+    public JTextField getjTextFieldDate() {
+        return jTextFieldDate;
+    }
+
+    public JTextField getjTextFieldMotif() {
+        return jTextFieldMotif;
+    }
+
+    public JTextField getjTextFieldNumRapport() {
+        return jTextFieldNumRapport;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

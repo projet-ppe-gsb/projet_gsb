@@ -5,6 +5,12 @@
  */
 package vue;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
 /**
  *
  * @author btssio
@@ -176,6 +182,90 @@ public class F_VISITEUR extends javax.swing.JFrame {
                 new F_VISITEUR().setVisible(true);
             }
         });
+    }
+
+    public JButton getjButtonFermer() {
+        return jButtonFermer;
+    }
+
+    public JButton getjButtonPrecedent1() {
+        return jButtonPrecedent1;
+    }
+
+    public JButton getjButtonSuivant1() {
+        return jButtonSuivant1;
+    }
+
+    public JComboBox getjComboBoxChercher() {
+        return jComboBoxChercher;
+    }
+
+    public JComboBox getjComboBoxLabo() {
+        return jComboBoxLabo;
+    }
+
+    public JComboBox getjComboBoxSecteur() {
+        return jComboBoxSecteur;
+    }
+
+    public JLabel getjLabelAdresse() {
+        return jLabelAdresse;
+    }
+
+    public JLabel getjLabelBG() {
+        return jLabelBG;
+    }
+
+    public JLabel getjLabelChercher() {
+        return jLabelChercher;
+    }
+
+    public JLabel getjLabelLabo() {
+        return jLabelLabo;
+    }
+
+    public JLabel getjLabelNom() {
+        return jLabelNom;
+    }
+
+    public JLabel getjLabelPrenom() {
+        return jLabelPrenom;
+    }
+
+    public JLabel getjLabelSecteur() {
+        return jLabelSecteur;
+    }
+
+    public JLabel getjLabelVille() {
+        return jLabelVille;
+    }
+
+    public JLabel getjLabelVisiteur() {
+        return jLabelVisiteur;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public JTextField getjTextFieldAdresse() {
+        return jTextFieldAdresse;
+    }
+
+    public JTextField getjTextFieldCodePostal() {
+        return jTextFieldCodePostal;
+    }
+
+    public JTextField getjTextFieldNom() {
+        return jTextFieldNom;
+    }
+
+    public JTextField getjTextFieldPrenom() {
+        return jTextFieldPrenom;
+    }
+
+    public JTextField getjTextFieldVille() {
+        return jTextFieldVille;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

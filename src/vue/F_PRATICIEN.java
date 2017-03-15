@@ -5,6 +5,13 @@
  */
 package vue;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JSeparator;
+import javax.swing.JTextField;
+
 /**
  *
  * @author btssio
@@ -144,7 +151,7 @@ public class F_PRATICIEN extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 523, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 444, Short.MAX_VALUE)
         );
 
         pack();
@@ -184,6 +191,106 @@ public class F_PRATICIEN extends javax.swing.JFrame {
                 new F_PRATICIEN().setVisible(true);
             }
         });
+    }
+
+    public JButton getjButtonChercher() {
+        return jButtonChercher;
+    }
+
+    public JButton getjButtonFermer() {
+        return jButtonFermer;
+    }
+
+    public JButton getjButtonPrecedent() {
+        return jButtonPrecedent;
+    }
+
+    public JButton getjButtonSuivant() {
+        return jButtonSuivant;
+    }
+
+    public JComboBox getjComboBoxChercher() {
+        return jComboBoxChercher;
+    }
+
+    public JComboBox getjComboLieuEx() {
+        return jComboLieuEx;
+    }
+
+    public JLabel getjLabel4() {
+        return jLabel4;
+    }
+
+    public JLabel getjLabelAdresse() {
+        return jLabelAdresse;
+    }
+
+    public JLabel getjLabelChercher() {
+        return jLabelChercher;
+    }
+
+    public JLabel getjLabelCoeffNot() {
+        return jLabelCoeffNot;
+    }
+
+    public JLabel getjLabelLieuEx() {
+        return jLabelLieuEx;
+    }
+
+    public JLabel getjLabelNom() {
+        return jLabelNom;
+    }
+
+    public JLabel getjLabelNum() {
+        return jLabelNum;
+    }
+
+    public JLabel getjLabelPrenom() {
+        return jLabelPrenom;
+    }
+
+    public JLabel getjLabelTitre() {
+        return jLabelTitre;
+    }
+
+    public JLabel getjLabelVille() {
+        return jLabelVille;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public JSeparator getjSeparator1() {
+        return jSeparator1;
+    }
+
+    public JTextField getjTextFieldAdresse() {
+        return jTextFieldAdresse;
+    }
+
+    public JTextField getjTextFieldCP1() {
+        return jTextFieldCP1;
+    }
+
+    public JTextField getjTextFieldCoefNot() {
+        return jTextFieldCoefNot;
+    }
+
+    public JTextField getjTextFieldNom() {
+        return jTextFieldNom;
+    }
+
+    public JTextField getjTextFieldNumero() {
+        return jTextFieldNumero;
+    }
+
+    public JTextField getjTextFieldPrenom() {
+        return jTextFieldPrenom;
+    }
+
+    public JTextField getjTextFieldVille() {
+        return jTextFieldVille;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

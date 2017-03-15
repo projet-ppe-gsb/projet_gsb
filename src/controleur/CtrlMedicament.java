@@ -5,18 +5,37 @@
  */
 package controleur;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import vue.F_MEDICAMENT;
-import vue.F_VISITEUR;
 
 /**
  *
  * @author btssio
  */
-public class CtrlMedicament {
+public class CtrlMedicament implements ActionListener{
+    private F_MEDICAMENT vue; // LA VUE
+    CtrlPrincipal ctrlPrincipal;
     
-    public CtrlMedicament(F_MEDICAMENT vue, CtrlPrincipal leControleurPrincipal) {
+     public CtrlMedicament (F_MEDICAMENT vue, CtrlPrincipal leControleurPrincipal) {
         this.vue = vue;
         this.ctrlPrincipal = leControleurPrincipal;
+        vue.getjButtonPrecedent().addActionListener(this);
+        vue.getjButtonSuivant().addActionListener(this);
+        vue.getjButtonFermer().addActionListener(this);
+    }
+    
+    public void actionPerformed(ActionEvent e) {
+        Object source = e.getSource();
+        if (source == vue.getjButtonFermer()) {
+            ctrlPrincipal.afficherMenu(vue);
+        }
+        if (source == vue.getjButtonPrecedent()) {
+            ctrlPrincipal.afficherPraticien(vue);
+        }
+        if (source == vue.getjButtonSuivant()) {
+            ctrlPrincipal.afficherRapportVisite(vue);
+        }
     }
 
     public F_MEDICAMENT getVue() {
@@ -34,6 +53,5 @@ public class CtrlMedicament {
     public void setCtrlPrincipal(CtrlPrincipal ctrlPrincipal) {
         this.ctrlPrincipal = ctrlPrincipal;
     }
-    private F_MEDICAMENT vue; // LA VUE
-    private CtrlPrincipal ctrlPrincipal;
+    
 }

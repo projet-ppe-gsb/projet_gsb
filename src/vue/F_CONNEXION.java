@@ -1,5 +1,11 @@
 package vue;
 
+import javax.swing.JInternalFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.JToggleButton;
+
 /**
  *
  * @author btssio
@@ -129,4 +135,38 @@ public class F_CONNEXION extends javax.swing.JFrame {
     public String getMDP() {
         return jTextFieldMDP.getText();
     }
+
+    public JInternalFrame getjInternalFrame1() {
+        return jInternalFrame1;
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public JLabel getjLabelConnexion() {
+        return jLabelConnexion;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public JTextField getjTextFieldIdentifiant() {
+        return jTextFieldIdentifiant;
+    }
+
+    public JTextField getjTextFieldMDP() {
+        return jTextFieldMDP;
+    }
+
+    public JToggleButton getjToggleButtonOK() {
+        return jToggleButtonOK;
+    }
+
+    public JToggleButton getjToggleButtonQuitter() {
+        return jToggleButtonQuitter;
+    }
+    
+    
 }

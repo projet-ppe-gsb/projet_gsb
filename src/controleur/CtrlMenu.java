@@ -14,7 +14,6 @@ import vue.F_VISITEUR;
 public class CtrlMenu implements ActionListener {
 
     private Menu_General vue;
-    CtrlVisiteur ctrlVisiteur;
     CtrlPrincipal ctrlPrincipal;
 
 
@@ -34,18 +33,23 @@ public class CtrlMenu implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Object source = e.getSource();
         if (source == vue.getjToggleButtonVisiteurs()) {
-            ctrlPrincipal.afficherVisiteur();
+            vue.getjToggleButtonVisiteurs().setSelected(false);
+            ctrlPrincipal.afficherVisiteur(vue);
         }
         if (source == vue.getjToggleButtonMedicaments()) {
-            ctrlPrincipal.afficherMedicament();
+            vue.getjToggleButtonMedicaments().setSelected(false);
+            ctrlPrincipal.afficherMedicament(vue);
         }
         if (source == vue.getjToggleButtonPraticiens()) {
-            ctrlPrincipal.afficherPraticien();
+            vue.getjToggleButtonPraticiens().setSelected(false);
+            ctrlPrincipal.afficherPraticien(vue);
         }
         if (source == vue.getjToggleButtonComptesRendus()) {
-            ctrlPrincipal.afficherRapportVisite();
+            vue.getjToggleButtonComptesRendus().setSelected(false);
+            ctrlPrincipal.afficherRapportVisite(vue);
         }
         if (source == vue.getjToggleButtonQuitter()) {
+            vue.getjToggleButtonQuitter().setSelected(false);
             ctrlPrincipal.quitterApplication();
         }
         

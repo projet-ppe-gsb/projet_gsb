@@ -6,35 +6,46 @@
 package controleur;
 
 
-import vue.F_CONNEXION;
-import vue.Menu_General;
+
 import vue.F_VISITEUR;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.SQLException;
-import modele.metier.Visiteur;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JOptionPane;
 
 
 /**
  *
  * @author btssio
  */
-public class CtrlVisiteur {
+public class CtrlVisiteur implements ActionListener{
     private F_VISITEUR vue; // LA VUE
-    private CtrlPrincipal ctrlPrincipal;
+    CtrlPrincipal ctrlPrincipal;
     
+   
+
+
 
     public CtrlVisiteur(F_VISITEUR vue, CtrlPrincipal leControleurPrincipal) {
         this.vue = vue;
         this.ctrlPrincipal = leControleurPrincipal;
+        vue.getjButtonPrecedent1().addActionListener(this);
+        vue.getjButtonSuivant1().addActionListener(this);
+        vue.getjButtonFermer().addActionListener(this);
+    }
+    
+    public void actionPerformed(ActionEvent e) {
+        Object source = e.getSource();
+        if (source == vue.getjButtonFermer()) {
+            ctrlPrincipal.afficherMenu(vue);
+        }
+        if (source == vue.getjButtonPrecedent1()) {
+            ctrlPrincipal.afficherRapportVisite(vue);
+        }
+        if (source == vue.getjButtonSuivant1()) {
+            ctrlPrincipal.afficherPraticien(vue);
+        }
     }
 
-     public F_VISITEUR getVue() {
+    public F_VISITEUR getVue() {
         return vue;
     }
 
