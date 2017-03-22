@@ -17,10 +17,12 @@ public class DaoVisiteurTest {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         java.sql.Connection cnx = null;
 
+        System.out.println("Test 0 - connexion...");
         test0_Connexion();
-        System.out.println("Test0 effectué : connexion\n");
+        System.out.println("Test0 : connexion effectuée\n");
+        System.out.println("Test 1 - sélection visiteurs");
         test1_SelectUnique();
-        System.out.println("Test1 effectué : sélection unique\n");
+        System.out.println("Test1 : sélection visiteurs effectuée\n");
         if (cnx != null) {
             cnx.close();
         }

@@ -12,8 +12,8 @@ import modele.metier.Secteur;
 
 public class DaoVisiteur {
 
-        public static List<Visiteur> selectAll() throws SQLException {
-        List<Visiteur> lesVisiteur = new ArrayList<Visiteur>();
+    public static List<Visiteur> selectAll() throws SQLException {
+        List<Visiteur> lesVisiteurs = new ArrayList<Visiteur>();
         Visiteur unVisiteur = null;
         ResultSet rs;
         PreparedStatement pstmt;
@@ -21,11 +21,13 @@ public class DaoVisiteur {
         // préparer la requête
         String requete = "SELECT * FROM VISITEUR";
         pstmt = jdbc.getConnexion().prepareStatement(requete);
+        
+        
         rs = pstmt.executeQuery();
         while (rs.next()) {
             String matriculeVisiteur = rs.getString("VIS_MATRICULE");
             String nomVisiteur = rs.getString("VIS_NOM");
-            String prenomVisiteur = rs.getString("Vis_PRENOM");
+            String prenomVisiteur = rs.getString("VIS_PRENOM");
             String adresseVisiteur = rs.getString("VIS_ADRESSE");
             String cpVisiteur = rs.getString("VIS_CP");
             String villeVisiteur = rs.getString("VIS_VILLE");
@@ -36,12 +38,12 @@ public class DaoVisiteur {
             Labo unLabo = DaoLabo.selectOneByCode(codeLabo);
  
             unVisiteur = new Visiteur(matriculeVisiteur, nomVisiteur, prenomVisiteur, adresseVisiteur, cpVisiteur, villeVisiteur, dateEmbaucheVisiteur, unSecteur, unLabo);
-            lesVisiteur.add(unVisiteur);
+            lesVisiteurs.add(unVisiteur);
         }
-        return lesVisiteur;
+        return lesVisiteurs;
     }
   
-  public static Visiteur getOne(String id) throws SQLException, ClassNotFoundException {
+    public static Visiteur getOne(String id) throws SQLException, ClassNotFoundException {
         Visiteur unVisiteur = null;
         Secteur unSecteur = null;      
         Labo unLabo = null;
@@ -53,7 +55,7 @@ public class DaoVisiteur {
         pstmt = jdbc.getConnexion().prepareStatement(requete);
         rs = pstmt.executeQuery();      
       
-      while (rs.next()) {
+        while (rs.next()) {
             String matricule = rs.getString("VIS_MATRICULE");
             String nom = rs.getString("VIS_NOM");
             String prenom = rs.getString("Vis_PRENOM");

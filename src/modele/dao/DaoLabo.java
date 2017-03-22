@@ -13,13 +13,17 @@ public class DaoLabo {
             PreparedStatement pstmt;
             Jdbc jdbc = Jdbc.getInstance();
             // préparer la requête
-            String requete = "SELECT * FROM LABO WHERE LAB_CODE = ? LIMIT 1";
+            String requete = "SELECT * FROM LABO WHERE LAB_CODE = ?";
             pstmt = jdbc.getConnexion().prepareStatement(requete);
             pstmt.setString(1, code);
             rs = pstmt.executeQuery();
             
-            String nomLabo = rs.getString("LAB_NOM");
-            String nomChefVente = rs.getString("LAB_CHEFVENTE");
+            String nomLabo = "";
+            String nomChefVente = "";
+            if(rs.next()) {
+                nomLabo = rs.getString("LAB_NOM");
+                nomChefVente = rs.getString("LAB_CHEFVENTE");   
+            }
 
             Labo unLabo = new Labo(code, nomLabo, nomChefVente);
             return unLabo;

@@ -9,6 +9,7 @@ import vue.*;
 import controleur.*;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
+import modele.dao.Jdbc;
 
 /**
  *
@@ -21,6 +22,18 @@ public class Main {
      */
     public static void main(String[] args) {
         
+        
+//        Jdbc.creer("oracle.jdbc.driver.OracleDriver", "jdbc:oracle:thin:", "@localhost:1521:XE", "", "btssio", "btssio");
+               Jdbc.creer("oracle.jdbc.driver.OracleDriver","jdbc:oracle:thin:","@//localhost:1521/","xe","gsb", "gsb");
+        try {
+            Jdbc.getInstance().connecter();
+            JOptionPane.showMessageDialog(null, "connexion réussie");
+        } catch (ClassNotFoundException ex) {
+            JOptionPane.showMessageDialog(null, "Main - classe JDBC non trouvée");
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Main - échec de connexion");
+        }
+        
         CtrlPrincipal leControleurPrincipal = new CtrlPrincipal();
         
         Menu_General laVueMenu_General = new Menu_General();
@@ -28,7 +41,7 @@ public class Main {
         leControleurPrincipal.setCtrlMenu(leControleurMenu);
         
         F_VISITEUR laVueVisiteur = new F_VISITEUR();
-        CtrlVisiteur leControleurVisiteur = new CtrlVisiteur(laVueVisiteur);
+        CtrlVisiteur leControleurVisiteur = new CtrlVisiteur(laVueVisiteur, leControleurPrincipal);
         leControleurPrincipal.setCtrlVisiteur(leControleurVisiteur);
         
         F_MEDICAMENT laVueMedicament = new F_MEDICAMENT();
@@ -45,6 +58,8 @@ public class Main {
 
         // afficher la vue
         laVueMenu_General.setVisible(true);
+        
+        
 
     }
 

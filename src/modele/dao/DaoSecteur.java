@@ -13,14 +13,18 @@ public class DaoSecteur {
             PreparedStatement pstmt;
             Jdbc jdbc = Jdbc.getInstance();
             // préparer la requête
-            String requete = "SELECT * FROM SECTEUR WHERE SEC_CODE = ? LIMIT 1";
+            String requete = "SELECT * FROM SECTEUR WHERE SEC_CODE = ?";
             pstmt = jdbc.getConnexion().prepareStatement(requete);
             pstmt.setString(1, code);
             rs = pstmt.executeQuery();
             
-            String codeLabo = rs.getString("SEC_CODE");
-            String libelle = rs.getString("SEC_LIBELLE");
-
+            String codeLabo = "";
+            String libelle = "";
+            
+            if(rs.next()) {
+                codeLabo = rs.getString("SEC_CODE");
+                libelle = rs.getString("SEC_LIBELLE");
+            }
             Secteur unSecteur = new Secteur(codeLabo, libelle);
             return unSecteur;
         }
