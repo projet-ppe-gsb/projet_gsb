@@ -6,10 +6,8 @@
 package controleur;
 
 import vue.Menu_General;
-import controleur.CtrlPrincipal;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import vue.F_VISITEUR;
 
 public class CtrlMenu implements ActionListener {
 

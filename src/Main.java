@@ -22,9 +22,13 @@ public class Main {
      */
     public static void main(String[] args) {
         
+        boolean production = true; // En production ou pas
         
-//        Jdbc.creer("oracle.jdbc.driver.OracleDriver", "jdbc:oracle:thin:", "@localhost:1521:XE", "", "btssio", "btssio");
-               Jdbc.creer("oracle.jdbc.driver.OracleDriver","jdbc:oracle:thin:","@//localhost:1521/","xe","gsb", "gsb");
+        if(production) {
+            Jdbc.creer("oracle.jdbc.driver.OracleDriver","jdbc:oracle:thin:","@//172.15.11.102:1521/","orcl","ora_2slamppe_eq8", "equipe08");
+        } else {
+            Jdbc.creer("oracle.jdbc.driver.OracleDriver","jdbc:oracle:thin:","@//localhost:1521/","xe","gsb", "gsb");
+        }
         try {
             Jdbc.getInstance().connecter();
             JOptionPane.showMessageDialog(null, "connexion réussie");
