@@ -28,7 +28,7 @@ public class Main {
         leControleurPrincipal.setCtrlMenu(leControleurMenu);
         
         F_VISITEUR laVueVisiteur = new F_VISITEUR();
-        CtrlVisiteur leControleurVisiteur = new CtrlVisiteur(laVueVisiteur, leControleurPrincipal);
+        CtrlVisiteur leControleurVisiteur = new CtrlVisiteur(laVueVisiteur);
         leControleurPrincipal.setCtrlVisiteur(leControleurVisiteur);
         
         F_MEDICAMENT laVueMedicament = new F_MEDICAMENT();

@@ -1,27 +1,33 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+// Vue
+
 package vue;
 
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import controleur.CtrlVisiteur;
+
 /**
  *
  * @author btssio
  */
-public class F_VISITEUR extends javax.swing.JFrame {
 
+public class F_VISITEUR extends javax.swing.JFrame {
+    DefaultComboBoxModel modeleListeVisiteurs;
+    
     /**
      * Creates new form F_VISITEUR
      */
     public F_VISITEUR() {
         initComponents();
+        
+        modeleListeVisiteurs = new DefaultComboBoxModel();
+        jComboBoxChercher.setModel(modeleListeVisiteurs);
+        
     }
 
     /**
@@ -53,7 +59,7 @@ public class F_VISITEUR extends javax.swing.JFrame {
         jButtonPrecedent1 = new javax.swing.JButton();
         jButtonSuivant1 = new javax.swing.JButton();
         jButtonFermer = new javax.swing.JButton();
-        jLabelBG = new javax.swing.JLabel();
+        jButtonOk = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -69,66 +75,71 @@ public class F_VISITEUR extends javax.swing.JFrame {
         jLabelChercher.setBounds(12, 48, 80, 21);
 
         jComboBoxChercher.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxChercher.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBoxChercherActionPerformed(evt);
+            }
+        });
         jPanel1.add(jComboBoxChercher);
         jComboBoxChercher.setBounds(130, 48, 101, 21);
 
         jLabelNom.setText("Nom");
         jPanel1.add(jLabelNom);
-        jLabelNom.setBounds(12, 89, 31, 15);
+        jLabelNom.setBounds(12, 89, 21, 14);
 
         jLabelPrenom.setText("Prenom");
         jPanel1.add(jLabelPrenom);
-        jLabelPrenom.setBounds(12, 120, 54, 15);
+        jLabelPrenom.setBounds(12, 120, 36, 14);
 
         jLabelAdresse.setText("Adresse");
         jPanel1.add(jLabelAdresse);
-        jLabelAdresse.setBounds(12, 157, 58, 15);
+        jLabelAdresse.setBounds(12, 157, 39, 14);
 
         jLabelVille.setText("Ville");
         jPanel1.add(jLabelVille);
-        jLabelVille.setBounds(12, 194, 30, 15);
+        jLabelVille.setBounds(12, 194, 18, 14);
 
         jLabelSecteur.setText("Secteur");
         jPanel1.add(jLabelSecteur);
-        jLabelSecteur.setBounds(12, 234, 55, 15);
+        jLabelSecteur.setBounds(12, 234, 37, 14);
 
         jLabelLabo.setText("Labo");
         jPanel1.add(jLabelLabo);
-        jLabelLabo.setBounds(12, 276, 35, 15);
+        jLabelLabo.setBounds(12, 276, 23, 14);
         jPanel1.add(jTextFieldNom);
-        jTextFieldNom.setBounds(130, 87, 146, 19);
+        jTextFieldNom.setBounds(130, 87, 146, 20);
         jPanel1.add(jTextFieldPrenom);
-        jTextFieldPrenom.setBounds(130, 118, 146, 19);
+        jTextFieldPrenom.setBounds(130, 118, 146, 20);
         jPanel1.add(jTextFieldAdresse);
-        jTextFieldAdresse.setBounds(130, 155, 410, 19);
+        jTextFieldAdresse.setBounds(130, 155, 410, 20);
         jPanel1.add(jTextFieldCodePostal);
-        jTextFieldCodePostal.setBounds(130, 192, 39, 19);
+        jTextFieldCodePostal.setBounds(130, 192, 39, 20);
         jPanel1.add(jTextFieldVille);
-        jTextFieldVille.setBounds(200, 190, 93, 19);
+        jTextFieldVille.setBounds(200, 190, 93, 20);
 
         jComboBoxSecteur.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel1.add(jComboBoxSecteur);
-        jComboBoxSecteur.setBounds(130, 229, 146, 24);
+        jComboBoxSecteur.setBounds(130, 229, 146, 20);
 
         jComboBoxLabo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel1.add(jComboBoxLabo);
-        jComboBoxLabo.setBounds(130, 271, 146, 24);
+        jComboBoxLabo.setBounds(130, 271, 146, 20);
 
         jButtonPrecedent1.setText("Précédent");
         jPanel1.add(jButtonPrecedent1);
-        jButtonPrecedent1.setBounds(190, 320, 107, 25);
+        jButtonPrecedent1.setBounds(190, 320, 81, 23);
 
         jButtonSuivant1.setText("Suivant");
         jPanel1.add(jButtonSuivant1);
-        jButtonSuivant1.setBounds(360, 320, 87, 25);
+        jButtonSuivant1.setBounds(360, 320, 69, 23);
 
         jButtonFermer.setText("Fermer");
         jPanel1.add(jButtonFermer);
-        jButtonFermer.setBounds(410, 370, 84, 25);
+        jButtonFermer.setBounds(410, 370, 67, 23);
 
-        jLabelBG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vue/GSB.jpg"))); // NOI18N
-        jPanel1.add(jLabelBG);
-        jLabelBG.setBounds(0, -10, 580, 430);
+        jButtonOk.setText("Ok");
+        jPanel1.add(jButtonOk);
+        jButtonOk.setBounds(240, 50, 73, 23);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -146,6 +157,10 @@ public class F_VISITEUR extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jComboBoxChercherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxChercherActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxChercherActionPerformed
 
     /**
      * @param args the command line arguments
@@ -197,7 +212,14 @@ public class F_VISITEUR extends javax.swing.JFrame {
     public JComboBox getjComboBoxChercher() {
         return jComboBoxChercher;
     }
+    
+    public DefaultComboBoxModel getModeleListeVisiteurs() {
+        return modeleListeVisiteurs;
+    }
 
+    public JButton getjButtonOk() {
+        return jButtonOk;
+    }
     public JComboBox getjComboBoxLabo() {
         return jComboBoxLabo;
     }
@@ -210,9 +232,9 @@ public class F_VISITEUR extends javax.swing.JFrame {
         return jLabelAdresse;
     }
 
-    public JLabel getjLabelBG() {
+   /* public JLabel getjLabelBG() {
         return jLabelBG;
-    }
+    }*/
 
     public JLabel getjLabelChercher() {
         return jLabelChercher;
@@ -268,13 +290,13 @@ public class F_VISITEUR extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonFermer;
+    private javax.swing.JButton jButtonOk;
     private javax.swing.JButton jButtonPrecedent1;
     private javax.swing.JButton jButtonSuivant1;
     private javax.swing.JComboBox jComboBoxChercher;
     private javax.swing.JComboBox jComboBoxLabo;
     private javax.swing.JComboBox jComboBoxSecteur;
     private javax.swing.JLabel jLabelAdresse;
-    private javax.swing.JLabel jLabelBG;
     private javax.swing.JLabel jLabelChercher;
     private javax.swing.JLabel jLabelLabo;
     private javax.swing.JLabel jLabelNom;
