@@ -138,6 +138,11 @@ public class F_VISITEUR extends javax.swing.JFrame {
         jButtonFermer.setBounds(410, 370, 67, 23);
 
         jButtonOk.setText("Ok");
+        jButtonOk.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonOkActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButtonOk);
         jButtonOk.setBounds(240, 50, 73, 23);
 
@@ -161,6 +166,10 @@ public class F_VISITEUR extends javax.swing.JFrame {
     private void jComboBoxChercherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxChercherActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBoxChercherActionPerformed
+
+    private void jButtonOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOkActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonOkActionPerformed
 
     /**
      * @param args the command line arguments

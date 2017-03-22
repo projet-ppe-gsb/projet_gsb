@@ -43,6 +43,10 @@ public class CtrlVisiteur implements ActionListener {
         }
 
     }
+    
+    public F_VISITEUR getVue() {
+        return this.vue;
+    }
 
     @Override
     public void actionPerformed(ActionEvent e) {
