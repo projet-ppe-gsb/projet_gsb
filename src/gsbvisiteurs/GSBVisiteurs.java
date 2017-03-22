@@ -14,7 +14,7 @@ import controleur.CtrlConnexion;
 import controleur.CtrlMenu;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
-import controleur.CtrlVisiteur;
+//import controleur.CtrlVisiteur;
 import javax.swing.UIManager;
 import javax.swing.UIManager.*;
 

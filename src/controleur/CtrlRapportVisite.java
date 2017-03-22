@@ -15,6 +15,8 @@ import vue.RAPPORT_VISITE;
  *
  * @author btssio
  */
+
+
 public class CtrlRapportVisite implements ActionListener{
     private RAPPORT_VISITE vue; // LA VUE
     CtrlPrincipal ctrlPrincipal;
@@ -39,21 +41,28 @@ public class CtrlRapportVisite implements ActionListener{
             ctrlPrincipal.afficherVisiteur(vue);
         }
     }
-
+//getter
     public RAPPORT_VISITE getVue() {
         return vue;
     }
-
-    public void setVue(RAPPORT_VISITE vue) {
-        this.vue = vue;
-    }
-
+    
     public CtrlPrincipal getCtrlPrincipal() {
         return ctrlPrincipal;
+    }
+    
+//setter    
+    public void setVue(RAPPORT_VISITE vue) {
+        this.vue = vue;
     }
 
     public void setCtrlPrincipal(CtrlPrincipal ctrlPrincipal) {
         this.ctrlPrincipal = ctrlPrincipal;
     }
    
+    
+    
+    
+    
+    
+    
 }
