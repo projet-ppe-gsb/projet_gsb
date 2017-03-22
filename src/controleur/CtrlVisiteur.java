@@ -23,22 +23,12 @@ public class CtrlVisiteur implements ActionListener {
         this.vue = vue;
         afficherLesVisiteurs();
         
-        getVue().getjButtonOk().addActionListener(this);
-        getVue().getjButtonSuivant1().addActionListener(this);
-        getVue().getjButtonPrecedent1().addActionListener(this);
-        getVue().getjButtonFermer().addActionListener(this);
+        vue.getjButtonOk().addActionListener(this);
+        vue.getjButtonSuivant1().addActionListener(this);
+        vue.getjButtonPrecedent1().addActionListener(this);
+        vue.getjButtonFermer().addActionListener(this);
 
     }
-    
-    public void addModel(Visiteur m){
-        System.out.println("Controller: adding model");
-	this.modele = m;
-    } //addModel()
-
-    public void addView(F_VISITEUR v){
-	System.out.println("Controller: adding view");
-	this.vue = v;
-    } //addView()
 
     public final void afficherLesVisiteurs() {
         try {
@@ -58,7 +48,7 @@ public class CtrlVisiteur implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Object source = e.getSource();
         System.out.println("test");
-        if (source == vue.getjButtonOk()) {
+     /*   if (source == vue.getjButtonOk()) {
             unVisiteur = (Visiteur) vue.getjComboBoxChercher().getSelectedItem();
             vue.getjTextFieldNom().setText(unVisiteur.getNom());
             vue.getjTextFieldPrenom().setText(unVisiteur.getPrenom());
