@@ -13,12 +13,19 @@ public class Jdbc {
     // Instance du singleton Jdbc
     private static Jdbc singleton = null;
     // Paramètre de la connexion
-    private String piloteJdbc = "";
+    /*private String piloteJdbc = "";
     private String protocoleJdbc = "gsb@";
     private String serveurBd = "gsb@//localhost:1521/xe";
     private String nomBd = "gsb";
     private String loginSgbd = "gsb";
-    private String mdpSgbd = "gsb";
+    private String mdpSgbd = "gsb";*/
+    
+    private String piloteJdbc = "";
+    private String protocoleJdbc = "gsb@";
+    private String serveurBd = "gsb@//172.15.11.102:1521/orcl";
+    private String nomBd = "gsb";
+    private String loginSgbd = "ora_2slamppe_eq8";
+    private String mdpSgbd = "equipe08";   
     // Connexion
     private Connection connexion = null; // java.sql.Connection
  

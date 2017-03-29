@@ -22,7 +22,7 @@ public class Main {
      */
     public static void main(String[] args) {
         
-        boolean production = true; // En production ou pas
+        boolean production = false; // En production ou pas
         
         if(production) {
             Jdbc.creer("oracle.jdbc.driver.OracleDriver","jdbc:oracle:thin:","@//172.15.11.102:1521/","orcl","ora_2slamppe_eq8", "equipe08");
