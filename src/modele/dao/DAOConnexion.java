@@ -45,8 +45,7 @@ public class DAOConnexion {
                 return true;
             }
             else {
-                //return false;
-                return true;
+                return false;
             }
         }
     }
