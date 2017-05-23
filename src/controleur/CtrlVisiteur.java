@@ -15,19 +15,18 @@ public class CtrlVisiteur implements ActionListener {
     private final F_VISITEUR vue;
   
     private List<Visiteur> lesVisiteurs;
-    private modele.metier.Visiteur unVisiteur;
+    private Visiteur unVisiteur;
     private String login;
     CtrlPrincipal ctrlPrincipal;
     
     Menu_General vueMenu;
     
     public CtrlVisiteur(F_VISITEUR vue, CtrlPrincipal leControleurPrincipal) {
-        System.out.println ("Controller()");
         this.vue = vue;
         this.ctrlPrincipal = leControleurPrincipal;
         afficherLesVisiteurs();
         
-        vue.getjButtonOk().addActionListener(this);
+        vue.getjComboBoxChercher().addActionListener(this);
         vue.getjButtonSuivant1().addActionListener(this);
         vue.getjButtonPrecedent1().addActionListener(this);
         vue.getjButtonFermer().addActionListener(this);
@@ -48,6 +47,21 @@ public class CtrlVisiteur implements ActionListener {
             for (Visiteur visiteur : lesVisiteurs) {
                 vue.getjComboBoxChercher().addItem(visiteur);
             }
+            
+            unVisiteur = (Visiteur) vue.getjComboBoxChercher().getSelectedItem();
+            vue.getjTextFieldNom().setText(unVisiteur.getNom());
+            vue.getjTextFieldPrenom().setText(unVisiteur.getPrenom());
+            vue.getjTextFieldAdresse().setText(unVisiteur.getAdresse());
+            vue.getjTextFieldVille().setText(unVisiteur.getVille());
+            vue.getjTextFieldCodePostal().setText(unVisiteur.getCp());
+            
+            Secteur secteur = unVisiteur.getSecteur();
+            if ("".equals(secteur.getSec_code())) {
+                vue.getJTextFieldSecteur().setText("Aucun secteur");
+            } else {
+                vue.getJTextFieldSecteur().setText(unVisiteur.getSecteur().getSec_libelle());
+            }
+            vue.getjTextFieldLabo().setText(unVisiteur.getLabo().getLab_nom());
 
         } catch (SQLException ex) {
             System.out.println(ex);
@@ -62,7 +76,7 @@ public class CtrlVisiteur implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         Object source = e.getSource();
-        if (source == vue.getjButtonOk()) {
+        if (source == vue.getjComboBoxChercher()) {
             unVisiteur = (Visiteur) vue.getjComboBoxChercher().getSelectedItem();
             vue.getjTextFieldNom().setText(unVisiteur.getNom());
             vue.getjTextFieldPrenom().setText(unVisiteur.getPrenom());

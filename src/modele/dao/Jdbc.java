@@ -1,33 +1,26 @@
 package modele.dao;
  
 import java.sql.*;
- 
-/**
- * Singleton fournit un objet de connexion JDBC
- *
- * @author nbourgeois
- * @version 2 22 novembre 2013
- */
+import java.io.FileInputStream; // Lecture du fichier de configuration
+import java.util.Properties; // Utilitaire de lecture de fichier de configuration
+
 public class Jdbc {
- 
-    // Instance du singleton Jdbc
-    private static Jdbc singleton = null;
-    // Paramètre de la connexion
-    /*private String piloteJdbc = "";
-    private String protocoleJdbc = "gsb@";
-    private String serveurBd = "gsb@//localhost:1521/xe";
-    private String nomBd = "gsb";
-    private String loginSgbd = "gsb";
-    private String mdpSgbd = "gsb";*/
-    
-    private String piloteJdbc = "";
+  /*  private String piloteJdbc = "";
     private String protocoleJdbc = "gsb@";
     private String serveurBd = "gsb@//172.15.11.102:1521/orcl";
     private String nomBd = "gsb";
     private String loginSgbd = "ora_2slamppe_eq8";
-    private String mdpSgbd = "equipe08";   
-    // Connexion
-    private Connection connexion = null; // java.sql.Connection
+    private String mdpSgbd = "equipe08";   */
+
+    private static Jdbc singleton = null;
+    private Connection connexion = null;
+    
+    private String piloteJdbc;
+    private String protocoleJdbc;
+    private String serveurBd;
+    private String nomBd;
+    private String loginSgbd;
+    private String mdpSgbd;
  
     private Jdbc() {
     }
@@ -50,9 +43,27 @@ public class Jdbc {
         this.mdpSgbd = mdp;
     }
  
-    public static Jdbc creer(String pilote, String protocole, String serveur, String base, String login, String mdp) {
+    public static Jdbc creer() {
+
         if (singleton == null) {
-            singleton = new Jdbc(pilote, protocole, serveur, base, login, mdp);
+            // On récupère les informations du fichier 
+            Properties proprietes = new Properties();
+            FileInputStream fichier = null;
+            
+            try {
+                
+                
+                fichier = new FileInputStream("src/jdbc.properties");
+                
+                proprietes.load(fichier);
+                
+                Class.forName(proprietes.getProperty("DB_DRIVER_CLASS"));
+                
+                singleton = new Jdbc(proprietes.getProperty("DB_PILOTE"), proprietes.getProperty("DB_PROTOCOLE"), proprietes.getProperty("DB_SERVEUR"), proprietes.getProperty("DB_BASE"), proprietes.getProperty("DB_USER"), proprietes.getProperty("DB_PASSWORD"));
+            } catch(Exception e) {
+                System.out.println(e);
+                singleton = null;
+            }
         }
         return singleton;
     }

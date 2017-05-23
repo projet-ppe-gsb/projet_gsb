@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package modele.tests;
 
 import java.sql.SQLException;
@@ -15,10 +10,6 @@ import modele.metier.Secteur;
 import static modele.tests.DaoVisiteurTest.test0_Connexion;
 import static modele.tests.DaoVisiteurTest.test1_SelectUnique; 
 
-/**
- *
- * @author btssio
- */
 public class DaoLaboTest {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         java.sql.Connection cnx = null;

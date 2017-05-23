@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 /**
@@ -42,13 +43,10 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
         jTextFieldNumRapport = new javax.swing.JTextField();
         jLabelPraticien = new javax.swing.JLabel();
         jButtonDetails = new javax.swing.JButton();
-        jComboBoxPraticien = new javax.swing.JComboBox<String>();
         jLabelDate = new javax.swing.JLabel();
-        jTextFieldDate = new javax.swing.JTextField();
         jLabelMotif = new javax.swing.JLabel();
         jTextFieldMotif = new javax.swing.JTextField();
         jLabelBilan = new javax.swing.JLabel();
-        jTextFieldBilan = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTableOffre = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
@@ -57,7 +55,11 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
         jButtonSuivant = new javax.swing.JButton();
         jButtonNouveau = new javax.swing.JButton();
         jLabelRapport = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jComboBoxPraticien = new javax.swing.JComboBox<>();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextAreaBilan = new javax.swing.JTextArea();
+        jButtonSauvegarder = new javax.swing.JButton();
+        jTextFieldDate = new javax.swing.JTextField();
 
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -78,40 +80,33 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
 
         jLabelNumRapport.setText("Numéro rapport :");
         jPanel1.add(jLabelNumRapport);
-        jLabelNumRapport.setBounds(10, 60, 122, 15);
+        jLabelNumRapport.setBounds(10, 60, 120, 14);
+
+        jTextFieldNumRapport.setEnabled(false);
         jPanel1.add(jTextFieldNumRapport);
-        jTextFieldNumRapport.setBounds(150, 60, 51, 19);
+        jTextFieldNumRapport.setBounds(150, 60, 51, 20);
 
         jLabelPraticien.setText("Praticien");
         jPanel1.add(jLabelPraticien);
-        jLabelPraticien.setBounds(10, 100, 63, 15);
+        jLabelPraticien.setBounds(10, 100, 120, 14);
 
         jButtonDetails.setText("Détails");
         jPanel1.add(jButtonDetails);
-        jButtonDetails.setBounds(240, 90, 84, 25);
-
-        jComboBoxPraticien.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBoxPraticien.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel1.add(jComboBoxPraticien);
-        jComboBoxPraticien.setBounds(150, 90, 83, 24);
+        jButtonDetails.setBounds(330, 90, 120, 23);
 
         jLabelDate.setText("Date Rapport");
         jPanel1.add(jLabelDate);
-        jLabelDate.setBounds(10, 130, 95, 15);
-        jPanel1.add(jTextFieldDate);
-        jTextFieldDate.setBounds(150, 130, 51, 19);
+        jLabelDate.setBounds(10, 130, 120, 14);
 
         jLabelMotif.setText("Motif Visite");
         jPanel1.add(jLabelMotif);
-        jLabelMotif.setBounds(10, 170, 80, 15);
+        jLabelMotif.setBounds(10, 170, 110, 14);
         jPanel1.add(jTextFieldMotif);
-        jTextFieldMotif.setBounds(150, 170, 83, 19);
+        jTextFieldMotif.setBounds(150, 170, 210, 20);
 
         jLabelBilan.setText("BILAN");
         jPanel1.add(jLabelBilan);
-        jLabelBilan.setBounds(10, 210, 40, 15);
-        jPanel1.add(jTextFieldBilan);
-        jTextFieldBilan.setBounds(150, 210, 210, 120);
+        jLabelBilan.setBounds(10, 210, 100, 14);
 
         jTableOffre.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -131,32 +126,44 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
 
         jLabel1.setText("Offre d'échantillons");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(400, 190, 140, 15);
+        jLabel1.setBounds(400, 190, 180, 14);
 
         jButtonFermer.setText("Fermer");
         jPanel1.add(jButtonFermer);
-        jButtonFermer.setBounds(480, 350, 84, 25);
+        jButtonFermer.setBounds(470, 390, 120, 50);
 
         jButtonPrecedent.setText("Précédent");
         jPanel1.add(jButtonPrecedent);
-        jButtonPrecedent.setBounds(120, 350, 107, 25);
+        jButtonPrecedent.setBounds(120, 350, 120, 23);
 
         jButtonSuivant.setText("Suivant");
         jPanel1.add(jButtonSuivant);
-        jButtonSuivant.setBounds(250, 350, 87, 25);
+        jButtonSuivant.setBounds(250, 350, 100, 23);
 
         jButtonNouveau.setText("Nouveau");
         jPanel1.add(jButtonNouveau);
-        jButtonNouveau.setBounds(350, 350, 96, 25);
+        jButtonNouveau.setBounds(360, 350, 100, 23);
 
         jLabelRapport.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabelRapport.setText("Rapport de Visite");
         jPanel1.add(jLabelRapport);
-        jLabelRapport.setBounds(220, 10, 153, 22);
+        jLabelRapport.setBounds(220, 10, 137, 24);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vue/GSB.jpg"))); // NOI18N
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(0, 0, 610, 400);
+        jPanel1.add(jComboBoxPraticien);
+        jComboBoxPraticien.setBounds(150, 90, 150, 20);
+
+        jTextAreaBilan.setColumns(20);
+        jTextAreaBilan.setRows(5);
+        jScrollPane2.setViewportView(jTextAreaBilan);
+
+        jPanel1.add(jScrollPane2);
+        jScrollPane2.setBounds(150, 220, 230, 100);
+
+        jButtonSauvegarder.setText("Sauvegarder");
+        jPanel1.add(jButtonSauvegarder);
+        jButtonSauvegarder.setBounds(10, 390, 110, 50);
+        jPanel1.add(jTextFieldDate);
+        jTextFieldDate.setBounds(150, 130, 150, 20);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -166,7 +173,9 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -210,6 +219,10 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
     public JButton getjButtonDetails() {
         return jButtonDetails;
     }
+    
+    public JButton getjButtonSauvegarder() {
+        return jButtonSauvegarder;
+    }
 
     public JButton getjButtonFermer() {
         return jButtonFermer;
@@ -227,16 +240,12 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
         return jButtonSuivant;
     }
 
-    public JComboBox<String> getjComboBoxPraticien() {
+    public JComboBox getjComboBoxPraticien() {
         return jComboBoxPraticien;
     }
 
     public JLabel getjLabel1() {
         return jLabel1;
-    }
-
-    public JLabel getjLabel2() {
-        return jLabel2;
     }
 
     public JLabel getjLabelBilan() {
@@ -283,12 +292,12 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
         return jTableOffre;
     }
 
-    public JTextField getjTextFieldBilan() {
-        return jTextFieldBilan;
-    }
-
     public JTextField getjTextFieldDate() {
         return jTextFieldDate;
+    }
+    
+    public JTextArea jTextAreaBilan() {
+        return jTextAreaBilan;
     }
 
     public JTextField getjTextFieldMotif() {
@@ -304,10 +313,10 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
     private javax.swing.JButton jButtonFermer;
     private javax.swing.JButton jButtonNouveau;
     private javax.swing.JButton jButtonPrecedent;
+    private javax.swing.JButton jButtonSauvegarder;
     private javax.swing.JButton jButtonSuivant;
     private javax.swing.JComboBox<String> jComboBoxPraticien;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabelBilan;
     private javax.swing.JLabel jLabelDate;
     private javax.swing.JLabel jLabelMotif;
@@ -316,10 +325,11 @@ public class RAPPORT_VISITE extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelRapport;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTableOffre;
-    private javax.swing.JTextField jTextFieldBilan;
+    private javax.swing.JTextArea jTextAreaBilan;
     private javax.swing.JTextField jTextFieldDate;
     private javax.swing.JTextField jTextFieldMotif;
     private javax.swing.JTextField jTextFieldNumRapport;

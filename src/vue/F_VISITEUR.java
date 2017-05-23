@@ -57,7 +57,6 @@ public class F_VISITEUR extends javax.swing.JFrame {
         jButtonPrecedent1 = new javax.swing.JButton();
         jButtonSuivant1 = new javax.swing.JButton();
         jButtonFermer = new javax.swing.JButton();
-        jButtonOk = new javax.swing.JButton();
         jTextFieldPrenom1 = new javax.swing.JTextField();
         jTextFieldSecteur1 = new javax.swing.JTextField();
 
@@ -68,11 +67,11 @@ public class F_VISITEUR extends javax.swing.JFrame {
         jLabelVisiteur.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabelVisiteur.setText("Visiteur");
         jPanel1.add(jLabelVisiteur);
-        jLabelVisiteur.setBounds(220, 10, 137, 23);
+        jLabelVisiteur.setBounds(250, 10, 137, 23);
 
-        jLabelChercher.setText("Chercher");
+        jLabelChercher.setText("Visiteur");
         jPanel1.add(jLabelChercher);
-        jLabelChercher.setBounds(12, 48, 80, 21);
+        jLabelChercher.setBounds(12, 48, 110, 21);
 
         jComboBoxChercher.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBoxChercher.addActionListener(new java.awt.event.ActionListener() {
@@ -81,31 +80,31 @@ public class F_VISITEUR extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jComboBoxChercher);
-        jComboBoxChercher.setBounds(130, 48, 101, 21);
+        jComboBoxChercher.setBounds(130, 48, 220, 21);
 
         jLabelNom.setText("Nom");
         jPanel1.add(jLabelNom);
-        jLabelNom.setBounds(12, 89, 21, 14);
+        jLabelNom.setBounds(12, 89, 90, 14);
 
         jLabelPrenom.setText("Prenom");
         jPanel1.add(jLabelPrenom);
-        jLabelPrenom.setBounds(12, 120, 36, 14);
+        jLabelPrenom.setBounds(12, 120, 100, 14);
 
         jLabelAdresse.setText("Adresse");
         jPanel1.add(jLabelAdresse);
-        jLabelAdresse.setBounds(12, 157, 39, 14);
+        jLabelAdresse.setBounds(12, 157, 110, 14);
 
         jLabelVille.setText("Ville");
         jPanel1.add(jLabelVille);
-        jLabelVille.setBounds(12, 194, 18, 14);
+        jLabelVille.setBounds(12, 194, 100, 14);
 
         jLabelSecteur.setText("Secteur");
         jPanel1.add(jLabelSecteur);
-        jLabelSecteur.setBounds(12, 234, 37, 14);
+        jLabelSecteur.setBounds(12, 234, 100, 14);
 
         jLabelLabo.setText("Labo");
         jPanel1.add(jLabelLabo);
-        jLabelLabo.setBounds(12, 276, 23, 14);
+        jLabelLabo.setBounds(10, 270, 90, 14);
         jPanel1.add(jTextFieldNom);
         jTextFieldNom.setBounds(130, 87, 146, 20);
         jPanel1.add(jTextFieldLabo);
@@ -119,24 +118,15 @@ public class F_VISITEUR extends javax.swing.JFrame {
 
         jButtonPrecedent1.setText("Précédent");
         jPanel1.add(jButtonPrecedent1);
-        jButtonPrecedent1.setBounds(190, 320, 81, 23);
+        jButtonPrecedent1.setBounds(130, 320, 150, 23);
 
         jButtonSuivant1.setText("Suivant");
         jPanel1.add(jButtonSuivant1);
-        jButtonSuivant1.setBounds(360, 320, 69, 23);
+        jButtonSuivant1.setBounds(330, 320, 160, 23);
 
         jButtonFermer.setText("Fermer");
         jPanel1.add(jButtonFermer);
-        jButtonFermer.setBounds(410, 370, 67, 23);
-
-        jButtonOk.setText("Ok");
-        jButtonOk.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonOkActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButtonOk);
-        jButtonOk.setBounds(240, 50, 73, 23);
+        jButtonFermer.setBounds(387, 370, 90, 23);
         jPanel1.add(jTextFieldPrenom1);
         jTextFieldPrenom1.setBounds(130, 118, 146, 20);
         jPanel1.add(jTextFieldSecteur1);
@@ -162,10 +152,6 @@ public class F_VISITEUR extends javax.swing.JFrame {
     private void jComboBoxChercherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxChercherActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBoxChercherActionPerformed
-
-    private void jButtonOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOkActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonOkActionPerformed
 
     /**
      * @param args the command line arguments
@@ -204,7 +190,6 @@ public class F_VISITEUR extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonFermer;
-    private javax.swing.JButton jButtonOk;
     private javax.swing.JButton jButtonPrecedent1;
     private javax.swing.JButton jButtonSuivant1;
     private javax.swing.JComboBox jComboBoxChercher;
@@ -241,9 +226,6 @@ public class F_VISITEUR extends javax.swing.JFrame {
         return jComboBoxChercher;
     }
 
-    public JButton getjButtonOk() {
-        return jButtonOk;
-    }
     public JTextField getjTextFieldLabo() {
         return jTextFieldLabo;
     }

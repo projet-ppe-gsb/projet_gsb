@@ -8,10 +8,6 @@ import modele.dao.DaoVisiteur;
 import modele.dao.Jdbc;
 import modele.metier.Visiteur;
 
-/**
- *
- * @author Dimitri
- */
 public class DaoVisiteurTest {
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
@@ -36,7 +32,7 @@ public class DaoVisiteurTest {
     }
 
     public static void test0_Connexion() throws ClassNotFoundException, SQLException {
-        Jdbc.creer("oracle.jdbc.driver.OracleDriver", "jdbc:oracle:thin:", "gsb@//localhost:1521/xe", "", "gsb", "gsb");
+        Jdbc.creer();
         Jdbc.getInstance().connecter();
         Connection cnx = Jdbc.getInstance().getConnexion();
     }

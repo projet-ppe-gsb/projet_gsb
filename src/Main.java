@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
 import vue.*;
 import controleur.*;
 import java.sql.SQLException;
@@ -22,20 +15,17 @@ public class Main {
      */
     public static void main(String[] args) {
         
-        boolean production = false; // En production ou pas
+        Jdbc.creer();
         
-        if(production) {
-            Jdbc.creer("oracle.jdbc.driver.OracleDriver","jdbc:oracle:thin:","@//172.15.11.102:1521/","orcl","ora_2slamppe_eq8", "equipe08");
-        } else {
-            Jdbc.creer("oracle.jdbc.driver.OracleDriver","jdbc:oracle:thin:","@//localhost:1521/","xe","gsb", "gsb");
-        }
         try {
             Jdbc.getInstance().connecter();
-            JOptionPane.showMessageDialog(null, "connexion réussie");
+            JOptionPane.showMessageDialog(null, "Connexion - Connexion réussie");
         } catch (ClassNotFoundException ex) {
-            JOptionPane.showMessageDialog(null, "Main - classe JDBC non trouvée");
+            System.out.println(ex);
+            JOptionPane.showMessageDialog(null, "Connexion - Classe JDBC non trouvée");
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "Main - échec de connexion");
+            System.out.println(ex);
+            JOptionPane.showMessageDialog(null, "Connexion - Echec de connexion");
         }
         
         CtrlPrincipal leControleurPrincipal = new CtrlPrincipal();
@@ -60,8 +50,12 @@ public class Main {
         CtrlRapportVisite leControleurRapportVisite = new CtrlRapportVisite(laVueRapport_visite, leControleurPrincipal);
         leControleurPrincipal.setCtrlRapportVisite(leControleurRapportVisite);
 
+        F_CONNEXION laVueConnexion = new F_CONNEXION();
+        CtrlConnexion leControleurConnexion = new CtrlConnexion(laVueConnexion, leControleurPrincipal);
+        leControleurPrincipal.setCtrlConnexion(leControleurConnexion);
+        
         // afficher la vue
-        laVueMenu_General.setVisible(true);
+        laVueConnexion.setVisible(true);
         
         
 

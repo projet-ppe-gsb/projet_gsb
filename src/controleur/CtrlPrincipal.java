@@ -11,6 +11,7 @@ public class CtrlPrincipal {
     CtrlPrincipal ctrlPrincipal;
     CtrlRapportVisite ctrlRapportVisite;
     CtrlMedicament ctrlMedicament;
+    CtrlConnexion ctrlConnexion;
 
     public CtrlMenu getCtrlMenu() {
         return ctrlMenu;
@@ -44,7 +45,10 @@ public class CtrlPrincipal {
         this.ctrlMedicament = ctrlMedicament;
     }
 
-
+    public void setCtrlConnexion(CtrlConnexion ctrlConnexion) {
+        this.ctrlConnexion = ctrlConnexion;
+    }
+    
     public CtrlVisiteur getCtrlVisiteur() {
         return ctrlVisiteur;
     }
@@ -61,6 +65,12 @@ public class CtrlPrincipal {
         this.ctrlPrincipal = ctrlPrincipal;
     }
 
+    public void afficherConnexion(JFrame laVue) {
+        laVue.setVisible(false);
+        this.ctrlConnexion.getVue().setVisible(true);
+        this.ctrlConnexion.getVue().setBounds(this.ctrlConnexion.getVue().getBounds());
+    }
+        
     public void afficherVisiteur(JFrame laVue) {
         laVue.setVisible(false);
         this.ctrlVisiteur.getVue().setVisible(true);

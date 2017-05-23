@@ -23,12 +23,16 @@ public class F_CONNEXION extends javax.swing.JFrame {
 
         jInternalFrame1 = new javax.swing.JInternalFrame();
         jPanel1 = new javax.swing.JPanel();
-        jLabelConnexion = new javax.swing.JLabel();
-        jTextFieldIdentifiant = new javax.swing.JTextField();
-        jTextFieldMDP = new javax.swing.JTextField();
-        jToggleButtonOK = new javax.swing.JToggleButton();
-        jToggleButtonQuitter = new javax.swing.JToggleButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jTextFieldDate = new javax.swing.JTextField();
+        jTextFieldNom = new javax.swing.JTextField();
+        jButtonQuitter = new javax.swing.JToggleButton();
+        jButtonConnexion = new javax.swing.JToggleButton();
+        jTextFieldStatut = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         jInternalFrame1.setVisible(true);
 
@@ -44,38 +48,56 @@ public class F_CONNEXION extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Connexion à l'application GSB");
 
         jPanel1.setLayout(null);
 
-        jLabelConnexion.setText("IDENTIFIEZ-VOUS");
-        jPanel1.add(jLabelConnexion);
-        jLabelConnexion.setBounds(300, 150, 180, 20);
-        jPanel1.add(jTextFieldIdentifiant);
-        jTextFieldIdentifiant.setBounds(300, 190, 120, 30);
-        jPanel1.add(jTextFieldMDP);
-        jTextFieldMDP.setBounds(300, 240, 120, 30);
-
-        jToggleButtonOK.setText("OK");
-        jPanel1.add(jToggleButtonOK);
-        jToggleButtonOK.setBounds(450, 240, 54, 25);
-
-        jToggleButtonQuitter.setText("QUITTER");
-        jPanel1.add(jToggleButtonQuitter);
-        jToggleButtonQuitter.setBounds(620, 390, 91, 25);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vue/GSB.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vue/logogsb.png"))); // NOI18N
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 10, 740, 450);
+        jLabel1.setBounds(10, 10, 90, 70);
+
+        jLabel2.setText("Date d'embauche:");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(40, 160, 130, 14);
+
+        jLabel3.setText("Nom: ");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(40, 100, 100, 14);
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel5.setText("Connexion");
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(190, 40, 130, 22);
+        jPanel1.add(jTextFieldDate);
+        jTextFieldDate.setBounds(230, 160, 150, 20);
+        jPanel1.add(jTextFieldNom);
+        jTextFieldNom.setBounds(230, 100, 150, 20);
+
+        jButtonQuitter.setText("Quitter");
+        jPanel1.add(jButtonQuitter);
+        jButtonQuitter.setBounds(320, 250, 105, 23);
+
+        jButtonConnexion.setText("Connexion");
+        jPanel1.add(jButtonConnexion);
+        jButtonConnexion.setBounds(160, 220, 105, 23);
+
+        jTextFieldStatut.setForeground(new java.awt.Color(255, 0, 0));
+        jPanel1.add(jTextFieldStatut);
+        jTextFieldStatut.setBounds(120, 190, 260, 0);
+
+        jLabel4.setText("E4: Nom: swiss - Date: 18-jun-2003");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(10, 270, 320, 14);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 750, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 439, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -118,55 +140,50 @@ public class F_CONNEXION extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JToggleButton jButtonConnexion;
+    private javax.swing.JToggleButton jButtonQuitter;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabelConnexion;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextFieldIdentifiant;
-    private javax.swing.JTextField jTextFieldMDP;
-    private javax.swing.JToggleButton jToggleButtonOK;
-    private javax.swing.JToggleButton jToggleButtonQuitter;
+    private javax.swing.JTextField jTextFieldDate;
+    private javax.swing.JTextField jTextFieldNom;
+    private javax.swing.JLabel jTextFieldStatut;
     // End of variables declaration//GEN-END:variables
 
-    public String getIdentifiant() {
-        return jTextFieldIdentifiant.getText();
-    }
-    
-    public String getMDP() {
-        return jTextFieldMDP.getText();
+    public JToggleButton getjButtonConnexion() {
+        return jButtonConnexion;
     }
 
-    public JInternalFrame getjInternalFrame1() {
-        return jInternalFrame1;
+    public void setjButtonConnexion(JToggleButton jButtonConnexion) {
+        this.jButtonConnexion = jButtonConnexion;
     }
 
-    public JLabel getjLabel1() {
-        return jLabel1;
+    public JToggleButton getjButtonQuitter() {
+        return jButtonQuitter;
     }
 
-    public JLabel getjLabelConnexion() {
-        return jLabelConnexion;
+    public void setjButtonQuitter(JToggleButton jButtonQuitter) {
+        this.jButtonQuitter = jButtonQuitter;
     }
 
-    public JPanel getjPanel1() {
-        return jPanel1;
+    public JTextField getjTextFieldDate() {
+        return jTextFieldDate;
     }
 
-    public JTextField getjTextFieldIdentifiant() {
-        return jTextFieldIdentifiant;
+    public void setjTextFieldDate(JTextField jTextFieldDate) {
+        this.jTextFieldDate = jTextFieldDate;
     }
 
-    public JTextField getjTextFieldMDP() {
-        return jTextFieldMDP;
+    public JTextField getjTextFieldNom() {
+        return jTextFieldNom;
     }
 
-    public JToggleButton getjToggleButtonOK() {
-        return jToggleButtonOK;
+    public void setjTextFieldStatut(JLabel jTextFieldStatut) {
+        this.jTextFieldStatut = jTextFieldStatut;
     }
 
-    public JToggleButton getjToggleButtonQuitter() {
-        return jToggleButtonQuitter;
-    }
-    
-    
 }

@@ -23,7 +23,7 @@ public class CtrlMenu implements ActionListener {
         vue.getjToggleButtonComptesRendus().addActionListener(this);
         vue.getjToggleButtonPraticiens().addActionListener(this);
         vue.getjToggleButtonMedicaments().addActionListener(this);
-        vue.getjToggleButtonQuitter().addActionListener(this);
+        vue.getjButtonDeconnexion().addActionListener(this);
     }
 
 
@@ -46,14 +46,13 @@ public class CtrlMenu implements ActionListener {
             vue.getjToggleButtonComptesRendus().setSelected(false);
             ctrlPrincipal.afficherRapportVisite(vue);
         }
-        if (source == vue.getjToggleButtonQuitter()) {
-            vue.getjToggleButtonQuitter().setSelected(false);
-            ctrlPrincipal.quitterApplication();
+        if (source == vue.getjButtonDeconnexion()) {
+            vue.getjButtonDeconnexion().setSelected(false);
+            ctrlPrincipal.afficherConnexion(vue);
         }
-        
     }
-    
-     public Menu_General getVue() {
+
+    public Menu_General getVue() {
         return vue;
     }
 

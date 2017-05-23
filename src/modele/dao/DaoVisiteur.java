@@ -43,7 +43,7 @@ public class DaoVisiteur {
         return lesVisiteurs;
     }
   
-    public static Visiteur getOne(String id) throws SQLException, ClassNotFoundException {
+    public static Visiteur getOneByMatricule(String id) throws SQLException, ClassNotFoundException {
         Visiteur unVisiteur = null;
         Secteur unSecteur = null;      
         Labo unLabo = null;
@@ -70,6 +70,6 @@ public class DaoVisiteur {
             unVisiteur = new Visiteur(matricule, nom, prenom, adresse, cp, ville, date, unSecteur, unLabo);
            
         }
-    return unVisiteur;
-  }
+        return unVisiteur;
+    }
 }
